@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:
+
+# Bloquear bots de scraping / IA conhecidos
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Baiduspider-saver
+User-agent: AhrefsBot
+Disallow: /
+
+# Bloquear grupos de crawlers de IA (exemplo genérico)
+User-agent: AI_Data_Scraper
+User-agent: Undocumented_AI_Agent
+Disallow: /
