@@ -71,6 +71,21 @@
     /* container centralizado e sem caixa cinza */
     .container{max-width:980px;margin:28px auto;padding:28px;background:transparent;box-shadow:none;border-radius:0;text-align:center}
     .logo-wrap img{max-width:320px;height:auto;display:block;margin:0 auto}
+    .logo-wrap-img,
+    .logo-wrap img {
+      max-width: 320px;    /* limite máximo desejado */
+      width: 100%;         /* permite encolher em telas pequenas */
+      height: auto;        /* preserva proporção */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: contain; /* evita distorções se a imagem for maior */
+    }
+
+    /* Opcional: limite de altura para evitar logos muito altas */
+    .logo-wrap-img {
+      max-height: 120px;
+    }
     .hero h1{font-size:1.6rem;margin:.5rem 0}
     .lead{color:#444}
     .muted{color:#666}
