@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
 
+  <!-- Primary Meta -->
   <title>Que Tal Congelados — Refeições ultracongeladas, práticas e saborosas</title>
   <meta name="description" content="Que Tal Congelados: refeições, sopas e marmitas ultracongeladas em Salvador. Praticidade, ingredientes 100% naturais e entrega rápida." />
   <link rel="canonical" href="https://quetalcongelados.com.br/" />
@@ -22,7 +23,7 @@
 
   <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
 
-  <!-- Preconnect for performance -->
+  <!-- Performance preconnect -->
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -36,19 +37,47 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css" />
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css" />
 
-  <!-- JSON-LD (mantido) -->
+  <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"Organization","@id":"https://quetalcongelados.com.br/#org","name":"Que Tal Congelados","url":"https://quetalcongelados.com.br/","logo":"https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png","contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"contato@quetalcongelados.com.br"}],"privacyPolicy":"https://quetalcongelados.com.br/politica-de-privacidade"},
-      {"@type":"WebSite","@id":"https://quetalcongelados.com.br/#website","url":"https://quetalcongelados.com.br/","name":"Que Tal Congelados","publisher":{"@id":"https://quetalcongelados.com.br/#org"}},
-      {"@type":"LocalBusiness","@id":"https://quetalcongelados.com.br/#local","name":"Que Tal Congelados","telephone":"+55 71 9.9654-0053","address":{"@type":"PostalAddress","streetAddress":"Rua Vila Romana, 53. Itapuã","addressLocality":"Salvador","addressRegion":"Bahia","addressCountry":"BR"},"url":"https://quetalcongelados.com.br/"}
+      {
+        "@type":"Organization",
+        "@id":"https://quetalcongelados.com.br/#org",
+        "name":"Que Tal Congelados",
+        "url":"https://quetalcongelados.com.br/",
+        "logo":"https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png",
+        "contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"contato@quetalcongelados.com.br"}],
+        "privacyPolicy":"https://quetalcongelados.com.br/politica-de-privacidade"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://quetalcongelados.com.br/#website",
+        "url":"https://quetalcongelados.com.br/",
+        "name":"Que Tal Congelados",
+        "publisher":{"@id":"https://quetalcongelados.com.br/#org"}
+      },
+      {
+        "@type":"LocalBusiness",
+        "@id":"https://quetalcongelados.com.br/#local",
+        "name":"Que Tal Congelados",
+        "telephone":"+55 71 9.9654-0053",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Rua Vila Romana, 53. Itapuã",
+          "addressLocality":"Salvador",
+          "addressRegion":"Bahia",
+          "postalCode":"",
+          "addressCountry":"BR"
+        },
+        "url":"https://quetalcongelados.com.br/"
+      }
     ]
   }
   </script>
 
-  <!-- Facebook Pixel (preservado) -->
+  <!-- Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -61,68 +90,72 @@
     fbq('init', '338300610511977');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=338300610511977&ev=PageView&noscript=1"/></noscript>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=338300610511977&ev=PageView&noscript=1"/>
+  </noscript>
 
-  <!-- Centralização, fundo branco e carousel ratio CSS -->
+  <!-- Centralização, fundo branco e carousel fixed 350x350 + logo fix -->
   <style>
     :root{--accent:#F89F08;--brand:#5fb71c}
-    html,body{background:#fff;height:100%;margin:0;padding:0}
+    html,body{background:#ffffff;height:100%;margin:0;padding:0}
     body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#222}
-    /* container centralizado e sem caixa cinza */
-    .container{max-width:980px;margin:28px auto;padding:28px;background:transparent;box-shadow:none;border-radius:0;text-align:center}
-    .logo-wrap img{max-width:320px;height:auto;display:block;margin:0 auto}
-    .logo-wrap-img,
-    .logo-wrap img {
-      max-width: 320px;    /* limite máximo desejado */
-      width: 100%;         /* permite encolher em telas pequenas */
-      height: auto;        /* preserva proporção */
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      object-fit: contain; /* evita distorções se a imagem for maior */
-    }
-
-    /* Opcional: limite de altura para evitar logos muito altas */
-    .logo-wrap-img {
-      max-height: 120px;
-    }
-    .hero h1{font-size:1.6rem;margin:.5rem 0}
-    .lead{color:#444}
-    .muted{color:#666}
-    .cta-whatsapp{display:inline-block;margin:14px auto;padding:10px 16px;border-radius:8px;background:var(--brand);color:#fff;font-weight:600;text-decoration:none}
-    /* Carousel: container with dynamic height (set by JS using the smallest image aspect ratio).
-       Default fallback height (if JS doesn't run) is 360px. */
-    #mainCarousel { max-width:100%; margin:0 auto; }
-    .carousel .wrap-img {
+    /* main container centered, white background site-wide */
+    .container { max-width:980px; margin:28px auto !important; padding:28px; background:transparent; box-shadow:none; border-radius:0; text-align:center; }
+    /* header/logo */
+    .logo-wrap-img, .logo-wrap img {
+      max-width:320px;
       width:100%;
-      height:360px; /* fallback; will be replaced by JS to match smallest-image aspect ratio */
+      height:auto;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      object-fit:contain;
+    }
+    .logo-wrap-img { max-height:120px; }
+    /* hero */
+    .hero { padding:28px 12px; text-align:center; }
+    .hero h1 { font-size:1.6rem; margin:.5rem 0; }
+    .hero p.lead { color:#444; margin:0 0 1rem; text-align:center; }
+    .muted { color:#666; }
+    .cta-whatsapp { display:inline-block; margin:14px auto; padding:10px 16px; border-radius:8px; background:var(--brand); color:#fff; font-weight:600; text-decoration:none; }
+
+    /* CAROUSEL fixed box 350x350 centered and images contained */
+    #mainCarousel { max-width:100%; margin:0 auto; }
+    #mainCarousel .wrap-img {
+      width:350px;
+      height:350px;
+      margin:0 auto;
       display:flex;
-      justify-content:center;
       align-items:center;
+      justify-content:center;
       overflow:hidden;
       background:transparent;
+      box-sizing:border-box;
     }
-    .carousel .wrap-img img {
+    #mainCarousel .wrap-img img {
       max-width:100%;
       max-height:100%;
       width:auto;
       height:auto;
-      object-fit:contain; /* ensures image is fully visible and centered */
+      object-fit:contain;
       display:block;
       margin:0 auto;
     }
-    .carousel-indicators{justify-content:center}
-    /* make lists readable while centered */
-    main ul, main ol{display:inline-block;text-align:left;margin:0 auto 1rem;padding-left:1.2rem}
-    /* responsive */
-    @media(min-width:768px){ .hero h1{font-size:2rem} }
+    .carousel-indicators { justify-content:center; }
+
+    /* lists centered as block but items left for readability */
+    main ul, main ol { display:inline-block; text-align:left; margin:0 auto 1rem; padding-left:1.2rem; }
+
+    /* responsive tweaks */
+    @media(min-width:768px){ .hero h1 { font-size:2rem; } .logo-wrap-img{ max-height:140px; } }
   </style>
 </head>
 <body>
+  <!-- Header / Hero -->
   <header class="hero" role="banner" aria-label="Que Tal Congelados">
     <div class="container">
       <a href="/" aria-label="Home">
-        <img src="https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png" alt="Que Tal Congelados - Logo" loading="eager" decoding="async" class="logo-wrap-img">
+        <img src="https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png" alt="Que Tal Congelados - Logo" class="logo-wrap-img" loading="eager" decoding="async">
       </a>
       <h1>Que Tal Congelados — Refeições ultracongeladas, práticas e saborosas</h1>
       <p class="lead muted">Refeições, sopas e lanches prontos, com ingredientes 100% naturais. Cardápio rotativo toda semana.</p>
@@ -130,6 +163,7 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main role="main" class="container" aria-labelledby="main-title">
     <section id="oferta" class="mb-4" aria-labelledby="oferta-title">
       <h2 id="oferta-title">REFEIÇÕES, SOPAS, LANCHES — JÁ CONGELADOS</h2>
@@ -156,19 +190,65 @@
 
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <div class="wrap-img"><img src="assets/images/img01.jpg" alt="Prato exemplar 1 — Que Tal Congelados" loading="lazy" decoding="async"></div>
+            <div class="wrap-img">
+              <img src="assets/images/img01.jpg" alt="Prato exemplar 1 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
           </div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img02.jpg" alt="Prato exemplar 2 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img03.jpg" alt="Prato exemplar 3 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img04.jpg" alt="Prato exemplar 4 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img05.jpg" alt="Prato exemplar 5 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img06.jpg" alt="Prato exemplar 6 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img07.jpg" alt="Prato exemplar 7 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/Cards-QueTal-croissant.jpg" alt="Croissant Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img09.jpg" alt="Prato exemplar 9 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/Cards-QueTal.jpg" alt="Cartão promocional Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img11.jpg" alt="Depoimento visual — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
-          <div class="carousel-item"><div class="wrap-img"><img src="assets/images/img12.jpg" alt="Prato exemplar 12 — Que Tal Congelados" loading="lazy" decoding="async"></div></div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img02.jpg" alt="Prato exemplar 2 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img03.jpg" alt="Prato exemplar 3 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img04.jpg" alt="Prato exemplar 4 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img05.jpg" alt="Prato exemplar 5 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img06.jpg" alt="Prato exemplar 6 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img07.jpg" alt="Prato exemplar 7 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/Cards-QueTal-croissant.jpg" alt="Croissant Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img09.jpg" alt="Prato exemplar 9 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/Cards-QueTal.jpg" alt="Cartão promocional Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img11.jpg" alt="Depoimento visual — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="wrap-img">
+              <img src="assets/images/img12.jpg" alt="Prato exemplar 12 — Que Tal Congelados" loading="lazy" decoding="async">
+            </div>
+          </div>
         </div>
 
         <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev" aria-label="Anterior">
@@ -194,7 +274,7 @@
       <p class="muted">Experimente a <span style="color:var(--accent)">Que Tal Congelados</span>: fale conosco para cardápio, preços e serviços. Envie mensagem a qualquer dia/horário e retornaremos o mais rápido possível.</p>
     </section>
 
-    <!-- SEO-rich content (visible and natural) -->
+    <!-- SEO visible content -->
     <section id="seo-content" class="mb-5" aria-labelledby="seo-title">
       <h2 id="seo-title">Marmitas e refeições ultracongeladas em Salvador</h2>
       <p class="muted">Que Tal Congelados é especialista em <strong>refeições ultracongeladas</strong> e <strong>marmitas ultracongeladas em Salvador</strong>. Nossas marmitas ultracongeladas são preparadas e resfriadas rapidamente para manter sabor, textura e valor nutricional — ideais para quem busca praticidade sem abrir mão de qualidade.</p>
@@ -210,7 +290,8 @@
     </section>
   </main>
 
-  <footer class="bg-white" role="contentinfo" style="background:transparent">
+  <!-- Footer -->
+  <footer class="bg-white" role="contentinfo" style="background:transparent;">
     <div class="container text-center">
       <p class="muted mb-1">A Que Tal Congelados é conhecida pela nobreza de seus produtos, respeito ao consumidor e compromisso com a qualidade.</p>
       <p class="muted mb-1">Contato: <a href="tel:+5571996540053">+55 71 9.9654-0053</a></p>
@@ -220,19 +301,25 @@
     </div>
   </footer>
 
-  <!-- Modal preserved -->
+  <!-- Modal -->
   <div class="modal mbr-popup fade" tabindex="-1" role="dialog" id="mbr-popup-c" aria-hidden="true" aria-labelledby="mbr-popup-title">
-    <div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content">
-      <div class="modal-header pb-0">
-        <h5 id="mbr-popup-title" class="modal-title">E AGORA?</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header pb-0">
+          <h5 id="mbr-popup-title" class="modal-title">E AGORA?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body"><p class="mbr-text display-7">Clique e informe o que você deseja:</p></div>
+        <div class="modal-footer pt-0">
+          <div class="mbr-section-btn">
+            <a class="btn btn-md btn-warning btn-zap display-4" href="javascript:void(0);" style="background-color:var(--brand) !important;color:#fff;">INFORMAÇÕES PELO WHATSAPP</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-body"><p class="mbr-text display-7">Clique e informe o que você deseja:</p></div>
-      <div class="modal-footer pt-0"><div class="mbr-section-btn"><a class="btn btn-md btn-warning btn-zap display-4" href="javascript:void(0);" style="background-color:var(--brand) !important;color:#fff;">INFORMAÇÕES PELO WHATSAPP</a></div></div>
-    </div></div>
+    </div>
   </div>
 
-  <!-- Scripts (preserved) -->
+  <!-- Scripts (placed at end for performance) -->
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js" defer></script>
   <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
@@ -246,134 +333,68 @@
   <script src="assets/formoid.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer></script>
 
-  <!-- Behavior script: preserves UTM, cookies and pixel events, and sets carousel to smallest-image aspect ratio -->
+  <!-- Inline behavior script: UTM, cookies, pixel events + set carousel fixed size (350x350) -->
   <script>
-  (function($){
-    var msgzap = "Olá,%20gostaria%20de%20saber%20sobre%20o%20serviço%20de%20vocês.%20[NÃO%20ALTERE%20ESSA%20MENSAGEM]";
-    var phone = "5571996540053";
+    (function($){
+      var msgzap = "Olá,%20gostaria%20de%20saber%20sobre%20o%20serviço%20de%20vocês.%20[NÃO%20ALTERE%20ESSA%20MENSAGEM]";
+      var phone = "5571996540053";
 
-    // WhatsApp CTA (preserves FB pixel event)
-    function openWhatsApp(){
-      var cliente_cookie = "quetal";
-      var evento_cookie = Cookies.get(cliente_cookie);
-      if (evento_cookie === undefined) {
-        Cookies.set(cliente_cookie, 'contato', { expires: 1, path: '' });
-        if (typeof fbq === 'function') {
-          fbq('track', 'Contact');
-          fbq('trackCustom', 'ev-info-pelo-whatsapp');
-        }
-      }
-      setTimeout(function(){
-        window.location.href = "https://wa.me/" + phone + "?text=" + msgzap;
-      }, 300);
-    }
-
-    $(document).on('click', '#ctaWhatsApp, #ctaWhatsApp2, .btn-zap', function(e){
-      e.preventDefault();
-      openWhatsApp();
-    });
-
-    // UTM builder (preserves logic)
-    (function buildUTM(){
-      var currentUrl = window.location.href;
-      var url = new URL(currentUrl);
-      var pagePath = url.pathname.replace(/^\/|\/$/g, '') || 'home';
-      var cleanReferrer = document.referrer ? document.referrer.replace(/^https?:\/\//, '') : '';
-      var utmSource = url.searchParams.get('utm_source') || cleanReferrer || 'queroisto';
-      var utmMedium = url.searchParams.get('utm_medium') || 'site';
-      var utmCampaign = url.searchParams.get('utm_campaign') || 'sem-indicacao';
-      var utmContent = url.searchParams.get('utm_content') || pagePath || 'Home';
-      var utmTerm = url.searchParams.get('utm_term') || '';
-      window.__QT_UTM = { utm_source: utmSource, utm_medium: utmMedium, utm_campaign: utmCampaign, utm_content: utmContent, utm_term: utmTerm };
-    })();
-
-    /* Carousel ratio logic:
-       - Wait for all carousel images to load.
-       - Find the image with the smallest natural area (w*h) and use its aspect ratio (w/h)
-         to compute the carousel container height: height = containerWidth / aspect.
-       - Apply that height to each .wrap-img so slides keep consistent size.
-       - Center images using flexbox and object-fit:contain (CSS).
-       - Recalculate on window resize (debounced).
-    */
-    function setCarouselToSmallestImageAspect(){
-      var carousel = document.getElementById('mainCarousel');
-      if(!carousel) return;
-      var imgs = carousel.querySelectorAll('.carousel-inner img');
-      if(!imgs || imgs.length===0) return;
-
-      var total = imgs.length;
-      var loaded = 0;
-      var minArea = Infinity;
-      var minW = 0, minH = 0;
-
-      function processImage(img){
-        // if natural sizes exist
-        var w = img.naturalWidth || img.width;
-        var h = img.naturalHeight || img.height;
-        if(w && h){
-          var area = w*h;
-          if(area < minArea){
-            minArea = area;
-            minW = w;
-            minH = h;
+      // WhatsApp CTA + FB pixel event + cookie
+      function openWhatsApp(){
+        var cliente_cookie = "quetal";
+        var evento_cookie = Cookies.get(cliente_cookie);
+        if (evento_cookie === undefined) {
+          Cookies.set(cliente_cookie, 'contato', { expires: 1, path: '' });
+          if (typeof fbq === 'function') {
+            fbq('track', 'Contact');
+            fbq('trackCustom', 'ev-info-pelo-whatsapp');
           }
         }
+        setTimeout(function(){
+          window.location.href = "https://wa.me/" + phone + "?text=" + msgzap;
+        }, 300);
       }
 
-      function tryApply(){
-        if(minArea === Infinity){ // fallback: keep default CSS height
-          return;
-        }
-        var containerWidth = carousel.clientWidth || carousel.offsetWidth;
-        if(!containerWidth) return;
-        var aspect = minW / minH; // width/height
-        var height = Math.round(containerWidth / aspect);
-        // apply a sensible min/max to avoid too small/huge heights
-        var minHeight = 200; // px
-        var maxHeight = 700; // px
-        height = Math.max(minHeight, Math.min(maxHeight, height));
-
-        var wraps = carousel.querySelectorAll('.wrap-img');
-        wraps.forEach(function(w){ w.style.height = height + 'px'; w.style.display='flex'; w.style.alignItems='center'; w.style.justifyContent='center'; w.style.overflow='hidden'; });
-        imgs.forEach(function(img){ img.style.maxHeight = '100%'; img.style.maxWidth = '100%'; img.style.objectFit = 'contain'; img.style.display='block'; img.style.margin='0 auto'; });
-      }
-
-      // wait for images to load where needed
-      imgs.forEach(function(img){
-        if(img.complete){
-          loaded++;
-          processImage(img);
-          if(loaded === total) tryApply();
-        } else {
-          img.addEventListener('load', function onload(){
-            img.removeEventListener('load', onload);
-            loaded++;
-            processImage(img);
-            if(loaded === total) tryApply();
-          });
-          // also handle error - count it to avoid hang
-          img.addEventListener('error', function onerr(){
-            img.removeEventListener('error', onerr);
-            loaded++;
-            if(loaded === total) tryApply();
-          });
-        }
+      $(document).on('click', '#ctaWhatsApp, #ctaWhatsApp2, .btn-zap', function(e){
+        e.preventDefault();
+        openWhatsApp();
       });
 
-      // debounce resize
-      var resizeTimer;
-      window.addEventListener('resize', function(){
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function(){ tryApply(); }, 200);
+      // UTM builder
+      (function buildUTM(){
+        var currentUrl = window.location.href;
+        var url = new URL(currentUrl);
+        var pagePath = url.pathname.replace(/^\/|\/$/g, '') || 'home';
+        var cleanReferrer = document.referrer ? document.referrer.replace(/^https?:\/\//, '') : '';
+        var utmSource = url.searchParams.get('utm_source') || cleanReferrer || 'queroisto';
+        var utmMedium = url.searchParams.get('utm_medium') || 'site';
+        var utmCampaign = url.searchParams.get('utm_campaign') || 'sem-indicacao';
+        var utmContent = url.searchParams.get('utm_content') || pagePath || 'Home';
+        var utmTerm = url.searchParams.get('utm_term') || '';
+        window.__QT_UTM = { utm_source: utmSource, utm_medium: utmMedium, utm_campaign: utmCampaign, utm_content: utmContent, utm_term: utmTerm };
+      })();
+
+      // Ensure carousel wrap sizes are applied on DOM ready (350x350)
+      document.addEventListener('DOMContentLoaded', function(){
+        var wraps = document.querySelectorAll('#mainCarousel .wrap-img');
+        wraps.forEach(function(w){
+          w.style.width = '350px';
+          w.style.height = '350px';
+          w.style.display = 'flex';
+          w.style.alignItems = 'center';
+          w.style.justifyContent = 'center';
+          w.style.overflow = 'hidden';
+        });
+        var imgs = document.querySelectorAll('#mainCarousel .wrap-img img');
+        imgs.forEach(function(img){
+          img.style.maxWidth = '100%';
+          img.style.maxHeight = '100%';
+          img.style.objectFit = 'contain';
+          img.style.display = 'block';
+          img.style.margin = '0 auto';
+        });
       });
-    }
-
-    // init on DOM ready
-    document.addEventListener('DOMContentLoaded', function(){
-      setCarouselToSmallestImageAspect();
-    });
-
-  })(jQuery);
+    })(jQuery);
   </script>
 </body>
 </html>
