@@ -291,6 +291,12 @@
 
     <section class="text-center mb-5" aria-label="Chamada para ação">
       <a class="cta-whatsapp" href="javascript:void(0);" id="ctaWhatsApp2" aria-label="Peça pelo WhatsApp agora">Peça pelo WhatsApp</a>
+      <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=bot%C3%A3o"
+           class="btn-action btn-cardapio"
+           target="_blank"
+           rel="noopener noreferrer">
+          🍽️ Ver Cardápio
+        </a>
     </section>
   </main>
 
@@ -370,7 +376,7 @@
         var url = new URL(currentUrl);
         var pagePath = url.pathname.replace(/^\/|\/$/g, '') || 'home';
         var cleanReferrer = document.referrer ? document.referrer.replace(/^https?:\/\//, '') : '';
-        var utmSource = url.searchParams.get('utm_source') || cleanReferrer || 'queroisto';
+        var utmSource = url.searchParams.get('utm_source') || cleanReferrer || 'landingnova';
         var utmMedium = url.searchParams.get('utm_medium') || 'site';
         var utmCampaign = url.searchParams.get('utm_campaign') || 'sem-indicacao';
         var utmContent = url.searchParams.get('utm_content') || pagePath || 'Home';
