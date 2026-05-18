@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pedidos.quetalcongelados.com.br)",
+      "Skill(firecrawl-scrape)"
+    ]
+  }
+}
