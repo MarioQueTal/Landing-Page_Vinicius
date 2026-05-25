@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="https://www.w3.org/1999/xhtml">
-  <!-- Gerado por Que Tal Congelados — 16/10/2025 -->
+  <!-- Atualizado em 2026-05-25 -->
+
   <url>
     <loc>https://quetalcongelados.com.br/</loc>
-    <lastmod>2025-10-16</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://quetalcongelados.com.br/politica-de-privacidade</loc>
-    <lastmod>2025-10-16</lastmod>
+    <loc>https://quetalcongelados.com.br/quem-somos.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://quetalcongelados.com.br/politica-de-privacidade.html</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
 
-  <!-- Se no futuro você adicionar páginas como /cardapio, /contato, /sobre, inclua-as aqui -->
+  <url>
+    <loc>https://quetalcongelados.com.br/politica-de-cookies.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://quetalcongelados.com.br/politica-de-entrega.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://quetalcongelados.com.br/politica-de-devolucao.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://quetalcongelados.com.br/termos-e-condicoes.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
 </urlset>

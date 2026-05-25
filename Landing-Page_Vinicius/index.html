@@ -1,801 +1,749 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Primary Meta -->
-  <title>Que Tal Congelados — Refeições ultracongeladas, práticas e saborosas</title>
-  <meta name="description" content="Que Tal Congelados: refeições, sopas e marmitas ultracongeladas em Salvador. Praticidade, ingredientes 100% naturais e entrega rápida." />
+  <!-- SEO -->
+  <title>Que Tal Congelados — Refeições Ultracongeladas em Salvador/BA</title>
+  <meta name="description" content="Refeições ultracongeladas artesanais entregues em Salvador e Região Metropolitana. Sem conservantes, sem realçadores. Cardápio semanal. Peça pelo WhatsApp." />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://quetalcongelados.com.br/" />
-  <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
-  <meta property="og:locale" content="pt_BR" />
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Que Tal Congelados — Refeições ultracongeladas" />
-  <meta property="og:description" content="Marmitas ultracongeladas em Salvador. Ingredientes 100% naturais, cardápio novo toda semana." />
   <meta property="og:url" content="https://quetalcongelados.com.br/" />
+  <meta property="og:title" content="Que Tal Congelados — Refeições Ultracongeladas em Salvador" />
+  <meta property="og:description" content="Refeições ultracongeladas artesanais. Sem conservantes. Entregamos em Salvador e RMS." />
+  <meta property="og:image" content="https://quetalcongelados.com.br/assets/images/capa-fb.jpg" />
+  <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Que Tal Congelados" />
-  <meta property="og:image" content="https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png" />
-  <meta name="twitter:card" content="summary_large_image" />
   <meta name="facebook-domain-verification" content="yy0sy3gag73l3em3iudwa2c1ky8lxv" />
 
-  <link rel="shortcut icon" href="assets/images/logo-icon-48x48.svg" type="image/x-icon">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Que Tal Congelados — Refeições Ultracongeladas em Salvador" />
+  <meta name="twitter:description" content="Refeições ultracongeladas artesanais. Sem conservantes. Entregamos em Salvador e RMS." />
+  <meta name="twitter:image" content="https://quetalcongelados.com.br/assets/images/capa-fb.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-192.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Brand CSS -->
+  <link rel="stylesheet" href="assets/css/brand.css" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","@id":"https://quetalcongelados.com.br/#org","name":"Que Tal Congelados","url":"https://quetalcongelados.com.br/","contactPoint":[{"@type":"ContactPoint","contactType":"customer support","telephone":"+55-71-99655-0630","email":"contato@quetalcongelados.com.br"}]},
-      {"@type":"WebSite","@id":"https://quetalcongelados.com.br/#website","url":"https://quetalcongelados.com.br/","name":"Que Tal Congelados","publisher":{"@id":"https://quetalcongelados.com.br/#org"}},
-      {"@type":"LocalBusiness","@id":"https://quetalcongelados.com.br/#local","name":"Que Tal Congelados","priceRange":"$$","telephone":"+55 71 9.9655-0630","address":{"@type":"PostalAddress","streetAddress":"Rua Vila Romana, 53. Itapuã","addressLocality":"Salvador","addressRegion":"Bahia","postalCode":"41.635-030","addressCountry":"BR"},"url":"https://quetalcongelados.com.br/"}
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://quetalcongelados.com.br/#organization",
+        "name": "Que Tal Alimentos LTDA",
+        "legalName": "Que Tal Alimentos LTDA",
+        "taxID": "54.313.265/0001-79",
+        "url": "https://quetalcongelados.com.br",
+        "logo": "https://quetalcongelados.com.br/assets/images/logos/logo-horizontal-color.png",
+        "sameAs": ["https://www.instagram.com/quetalcongelados/"]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://quetalcongelados.com.br/#localbusiness",
+        "name": "Que Tal Congelados",
+        "image": "https://quetalcongelados.com.br/assets/images/capa-fb.jpg",
+        "description": "Refeições ultracongeladas artesanais em Salvador e Região Metropolitana. Sem conservantes, sem realçadores de sabor.",
+        "url": "https://quetalcongelados.com.br",
+        "telephone": "+55-71-99655-0630",
+        "email": "contato@quetalcongelados.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Vila Romana, 53",
+          "addressLocality": "Itapuã",
+          "addressRegion": "BA",
+          "postalCode": "41635-030",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "07:00",
+            "closes": "16:40"
+          }
+        ],
+        "priceRange": "$$",
+        "servesCuisine": "Refeições Ultracongeladas",
+        "areaServed": "Salvador e Região Metropolitana"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://quetalcongelados.com.br/#website",
+        "url": "https://quetalcongelados.com.br",
+        "name": "Que Tal Congelados",
+        "publisher": { "@id": "https://quetalcongelados.com.br/#organization" }
+      }
     ]
   }
   </script>
-
-  <!-- Facebook Pixel -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','338300610511977');fbq('track','PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=338300610511977&ev=PageView&noscript=1"/></noscript>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* ── TOKENS ── */
-    :root{
-      --brand:       #E87D0D;
-      --brand-dark:  #C46A00;
-      --brand-light: #FFF3E0;
-      --ink:         #1C1410;
-      --ink-2:       #5C4A3A;
-      --surface:     #FFFFFF;
-      --surface-2:   #FFFBF6;
-      --border:      #EDE0D0;
-      --green:       #25D366;
-      --green-dark:  #1aad55;
-
-      --f-head: 'Lora', Georgia, serif;
-      --f-body: 'Inter', system-ui, sans-serif;
-
-      --r-sm:  8px;
-      --r-md:  16px;
-      --r-lg:  24px;
-      --r-pill:999px;
-
-      --shadow-sm: 0 2px 8px rgba(0,0,0,.07);
-      --shadow-md: 0 6px 24px rgba(0,0,0,.10);
-      --t: 220ms ease-out;
-    }
-
-    /* ── RESET ── */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:var(--f-body);
-      font-size:16px;line-height:1.65;
-      color:var(--ink);
-      background:var(--surface);
-      -webkit-font-smoothing:antialiased;
-    }
-    img{display:block;max-width:100%}
-    a{color:inherit;text-decoration:none}
-
-    /* ── SKIP ── */
-    .skip{position:absolute;top:-100%;left:1rem;background:var(--brand);color:#fff;padding:.5rem 1rem;border-radius:var(--r-sm);font-weight:600;z-index:9999;transition:top var(--t)}
-    .skip:focus{top:1rem}
-
-    /* ── UTILS ── */
-    .wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
-    .wrap--narrow{max-width:720px;margin:0 auto;padding:0 1.5rem}
-
-    /* ─────────────────────────
-       TOP BAR
-    ───────────────────────── */
-    .topbar{
-      background:var(--brand);
-      color:#fff;
-      font-size:.82rem;font-weight:600;
-      text-align:center;
-      padding:.55rem 1rem;
-      letter-spacing:.04em;
-    }
-
-    /* ─────────────────────────
-       HEADER / HERO
-    ───────────────────────── */
-    .hero{
-      background: var(--surface-2);
-      border-bottom: 1px solid var(--border);
-      padding: 3.5rem 1.5rem 4rem;
-      text-align: center;
-    }
-    .hero__logo{
-      width: 200px;
-      height: auto;
-      margin: 0 auto 2.5rem;
-      object-fit: contain;
-    }
-    .hero__title{
-      font-family:var(--f-head);
-      font-size: clamp(1.9rem, 5vw, 3rem);
-      font-weight: 700;
-      color: var(--ink);
-      line-height: 1.2;
-      letter-spacing: -.02em;
-      margin-bottom: .85rem;
-    }
-    .hero__title span{color:var(--brand)}
-    .hero__sub{
-      font-size: clamp(1rem, 2.5vw, 1.15rem);
-      color: var(--ink-2);
-      max-width: 520px;
-      margin: 0 auto 2.25rem;
-    }
-    .cta-row{
-      display:flex;flex-wrap:wrap;
-      gap:12px;justify-content:center;
-    }
-    .btn{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:14px 28px;
-      font-family:var(--f-body);font-size:1rem;font-weight:700;
-      border-radius:var(--r-pill);border:none;cursor:pointer;
-      text-decoration:none;
-      transition:transform var(--t),box-shadow var(--t),background var(--t);
-    }
-    .btn:focus-visible{outline:3px solid var(--brand-dark);outline-offset:3px}
-    .btn--wpp{background:var(--green);color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.3)}
-    .btn--wpp:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 6px 22px rgba(37,211,102,.38);color:#fff}
-    .btn--primary{background:var(--brand);color:#fff;box-shadow:0 4px 16px rgba(232,125,13,.3)}
-    .btn--primary:hover{background:var(--brand-dark);transform:translateY(-2px);box-shadow:0 6px 22px rgba(232,125,13,.38);color:#fff}
-    .btn--outline{background:#fff;color:var(--brand);border:2px solid var(--brand);box-shadow:var(--shadow-sm)}
-    .btn--outline:hover{background:var(--brand-light);transform:translateY(-2px)}
-
-    /* ─────────────────────────
-       PILLS / BADGES
-    ───────────────────────── */
-    .badges{
-      display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
-      margin-top:2.5rem;
-    }
-    .badge{
-      display:inline-flex;align-items:center;gap:6px;
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--r-pill);
-      padding:.45rem 1rem;
-      font-size:.82rem;font-weight:600;color:var(--ink-2);
-      box-shadow:var(--shadow-sm);
-    }
-    .badge svg{color:var(--brand);flex-shrink:0}
-
-    /* ─────────────────────────
-       SECTIONS
-    ───────────────────────── */
-    .section{padding:4rem 0}
-    .section--alt{background:var(--surface-2)}
-    .section__head{text-align:center;margin-bottom:2.5rem}
-    .section__label{
-      font-size:.78rem;font-weight:700;letter-spacing:.1em;
-      color:var(--brand);text-transform:uppercase;
-      display:block;margin-bottom:.5rem;
-    }
-    .section__title{
-      font-family:var(--f-head);
-      font-size:clamp(1.5rem,4vw,2.2rem);
-      font-weight:700;color:var(--ink);
-      line-height:1.25;letter-spacing:-.01em;
-    }
-    .section__lead{
-      color:var(--ink-2);
-      font-size:1rem;
-      max-width:500px;margin:0.6rem auto 0;
-    }
-
-    /* ─────────────────────────
-       PRODUCT GRID
-    ───────────────────────── */
-    .products-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-      gap:1.25rem;
-    }
-    .product-card{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--r-md);
-      overflow:hidden;
-      box-shadow:var(--shadow-sm);
-      transition:transform var(--t),box-shadow var(--t);
-    }
-    .product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
-    .product-card__img{
-      width:100%;
-      aspect-ratio:1/1;
-      object-fit:cover;
-      background:var(--brand-light);
-    }
-    .product-card__body{padding:1rem 1.1rem 1.25rem}
-    .product-card__tag{
-      font-size:.72rem;font-weight:700;letter-spacing:.08em;
-      color:var(--brand);text-transform:uppercase;
-      margin-bottom:.3rem;
-    }
-    .product-card__name{
-      font-family:var(--f-head);
-      font-size:1rem;font-weight:600;
-      color:var(--ink);line-height:1.3;
-      margin-bottom:.25rem;
-    }
-    .product-card__price{
-      font-size:.95rem;font-weight:700;
-      color:var(--brand-dark);
-    }
-
-    /* ─────────────────────────
-       FEATURE CARDS
-    ───────────────────────── */
-    .features-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:1.25rem;
-    }
-    .feature{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--r-md);
-      padding:1.75rem 1.5rem;
-      text-align:center;
-      box-shadow:var(--shadow-sm);
-    }
-    .feature__icon{
-      width:48px;height:48px;
-      background:var(--brand-light);
-      border-radius:var(--r-md);
-      display:flex;align-items:center;justify-content:center;
-      margin:0 auto 1rem;
-      color:var(--brand);
-    }
-    .feature__title{
-      font-family:var(--f-head);
-      font-size:1.05rem;font-weight:600;
-      color:var(--ink);margin-bottom:.4rem;
-    }
-    .feature__desc{font-size:.9rem;color:var(--ink-2)}
-
-    /* ─────────────────────────
-       KITS / PROMO BANNER
-    ───────────────────────── */
-    .kits-row{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-      gap:1rem;
-    }
-    .kit-card{
-      background:var(--brand);
-      border-radius:var(--r-md);
-      padding:1.5rem 1.25rem;
-      text-align:center;
-      color:#fff;
-      position:relative;overflow:hidden;
-    }
-    .kit-card::before{
-      content:'';position:absolute;top:-40px;right:-40px;
-      width:120px;height:120px;border-radius:50%;
-      background:rgba(255,255,255,.08);
-    }
-    .kit-card__discount{
-      font-size:2rem;font-weight:700;
-      font-family:var(--f-head);
-      line-height:1;margin-bottom:.25rem;
-    }
-    .kit-card__label{font-size:.85rem;opacity:.9;font-weight:500}
-    .kit-card__price{
-      font-size:.78rem;margin-top:.75rem;
-      opacity:.8;
-      background:rgba(0,0,0,.15);
-      display:inline-block;padding:.2rem .6rem;
-      border-radius:var(--r-pill);
-    }
-
-    /* ─────────────────────────
-       TESTIMONIALS
-    ───────────────────────── */
-    .testimonials-row{
-      display:flex;flex-wrap:wrap;
-      justify-content:center;gap:1.25rem;
-      margin-top:1.5rem;
-    }
-    .testimonials-row img{
-      width:240px;
-      border-radius:var(--r-md);
-      border:1px solid var(--border);
-      box-shadow:var(--shadow-sm);
-      object-fit:cover;
-    }
-
-    /* ─────────────────────────
-       CTA BAND
-    ───────────────────────── */
-    .cta-band{
-      background:var(--ink);
-      padding:4rem 1.5rem;
-      text-align:center;
-    }
-    .cta-band__title{
-      font-family:var(--f-head);
-      font-size:clamp(1.5rem,4vw,2.2rem);
-      color:#fff;font-weight:700;
-      margin-bottom:.75rem;
-    }
-    .cta-band__sub{color:rgba(255,255,255,.7);font-size:1rem;margin-bottom:2rem}
-
-    /* ─────────────────────────
-       INFO STRIP
-    ───────────────────────── */
-    .info-strip{
-      background:var(--surface-2);
-      border-top:1px solid var(--border);
-      border-bottom:1px solid var(--border);
-      padding:1.5rem 1.5rem;
-    }
-    .info-strip__grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:1.25rem;
-      text-align:center;
-    }
-    .info-item__label{font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--brand);text-transform:uppercase;margin-bottom:.25rem}
-    .info-item__value{font-size:.95rem;font-weight:600;color:var(--ink)}
-
-    /* ─────────────────────────
-       FOOTER
-    ───────────────────────── */
-    .footer{
-      background:var(--ink);
-      color:rgba(255,255,255,.6);
-      padding:2.5rem 1.5rem;
-      text-align:center;
-      font-size:.82rem;line-height:1.8;
-    }
-    .footer a{color:rgba(255,255,255,.75);text-decoration:underline}
-    .footer a:hover{color:var(--brand)}
-    .footer__brand{
-      font-family:var(--f-head);font-size:1rem;
-      color:var(--brand);display:block;margin-bottom:.75rem;font-weight:600;
-    }
-    .footer__divider{border-color:rgba(255,255,255,.1);margin:1.25rem 0}
-    .footer__legal{font-size:.72rem;color:rgba(255,255,255,.35)}
-
-    /* ─────────────────────────
-       SEO SECTION
-    ───────────────────────── */
-    .seo-section h3{
-      font-family:var(--f-head);font-size:1.05rem;font-weight:600;
-      color:var(--brand);margin:1.5rem 0 .4rem;
-    }
-    .seo-section p{font-size:.92rem;color:var(--ink-2);line-height:1.7}
-
-    /* ─────────────────────────
-       RESPONSIVE
-    ───────────────────────── */
-    @media(max-width:600px){
-      .hero{padding:2.5rem 1.25rem 3rem}
-      .hero__logo{width:160px}
-      .products-grid{grid-template-columns:repeat(2,1fr);gap:.75rem}
-      .product-card__body{padding:.75rem .85rem 1rem}
-      .testimonials-row img{width:160px}
-    }
-    @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{transition:none!important;animation:none!important}
-    }
-  </style>
 </head>
 <body>
-  <a class="skip" href="#main">Ir para o conteúdo</a>
 
-  <!-- TOP BAR -->
-  <div class="topbar" aria-label="Informação de destaque">
-    Pedido mínimo R$&nbsp;129,50 &nbsp;·&nbsp; Entrega em até 48h úteis &nbsp;·&nbsp; Cardápio novo toda semana
+  <!-- A11y: pular navegação -->
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       TOPBAR — informações utilitárias
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="topbar" role="note" aria-label="Informações de atendimento">
+    <div class="topbar__inner">
+      <span class="topbar__item">
+        <span class="ms ms--sm" aria-hidden="true">schedule</span>
+        Seg–Sex &nbsp;07h–16h40
+      </span>
+      <span class="topbar__sep" aria-hidden="true">·</span>
+      <span class="topbar__item">
+        <span class="ms ms--sm" aria-hidden="true">payments</span>
+        Pedido mínimo R$&nbsp;129,50
+      </span>
+      <span class="topbar__sep" aria-hidden="true">·</span>
+      <span class="topbar__item">
+        <span class="ms ms--sm" aria-hidden="true">local_shipping</span>
+        Entrega em Salvador e RMS
+      </span>
+    </div>
   </div>
 
-  <!-- HERO -->
-  <header class="hero" role="banner">
-    <div class="wrap--narrow">
-      <a href="/" aria-label="Página inicial Que Tal Congelados">
-        <img
-          src="https://pd-clientes-all.s3.us-west-2.amazonaws.com/quetalcongelados/upload/que-tal-congelados_27102025034921.webp"
-          alt="Que Tal Congelados"
-          class="hero__logo"
-          loading="eager"
-          decoding="async"
-          width="200"
-          height="80"
-          onerror="this.onerror=null;this.src='assets/images/logo4.png'"
-        >
-      </a>
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO — Bordô full-bleed [BRAND]
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="hero section--bordo" aria-labelledby="hero-heading">
 
-      <h1 class="hero__title">
-        Refeições de verdade,<br>
-        <span>prontas quando você precisar</span>
-      </h1>
-      <p class="hero__sub">
-        Marmitas, sopas e lanches ultracongelados com ingredientes 100% naturais.
-        Direto de Salvador para a sua mesa.
-      </p>
-
-      <div class="cta-row">
-        <button id="ctaWhatsApp" class="btn btn--wpp" aria-label="Peça pelo WhatsApp">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.11 1.523 5.84L.057 23.217a.75.75 0 0 0 .924.924l5.377-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.512-5.21-1.404l-.374-.217-3.88 1.058 1.02-3.768-.23-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Peça pelo WhatsApp
-        </button>
-        <a
-          href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=hero"
-          class="btn btn--primary"
-          target="_blank" rel="noopener noreferrer"
-          aria-label="Ver cardápio completo"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
-          Ver Cardápio
+    <!-- Header do site (dentro do hero) -->
+    <header class="site-header" role="banner">
+      <div class="wrap site-header__inner">
+        <a href="/" class="site-header__logo" aria-label="Que Tal Congelados — página inicial">
+          <img src="assets/images/logos/logo-horizontal-dark.png"
+               alt="Que Tal Congelados"
+               width="200" height="48"
+               fetchpriority="high" />
+        </a>
+        <nav class="site-header__nav" aria-label="Navegação principal">
+          <a href="#cardapio">Cardápio</a>
+          <a href="#kits">Kits</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+        <a href="https://wa.me/5571996550630?text=Ol%C3%A1%21+Vim+pelo+site+e+quero+fazer+um+pedido."
+           class="btn btn--accent btn--sm site-header__cta"
+           data-wpp
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Fazer pedido pelo WhatsApp">
+          <span class="ms ms--sm" aria-hidden="true">whatsapp</span>
+          Fazer pedido
         </a>
       </div>
+    </header>
 
-      <div class="badges" role="list" aria-label="Diferenciais">
-        <span class="badge" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          100% naturais
-        </span>
-        <span class="badge" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Cardápio semanal
-        </span>
-        <span class="badge" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          Delivery em Salvador
-        </span>
-        <span class="badge" role="listitem">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          15 anos de experiência
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <main id="main" role="main">
-
-    <!-- INFO STRIP -->
-    <div class="info-strip" aria-label="Informações de entrega">
-      <div class="wrap">
-        <div class="info-strip__grid">
-          <div>
-            <div class="info-item__label">Entrega</div>
-            <div class="info-item__value">A partir de R$ 14,00</div>
-          </div>
-          <div>
-            <div class="info-item__label">Prazo</div>
-            <div class="info-item__value">48 horas úteis</div>
-          </div>
-          <div>
-            <div class="info-item__label">Pedido mínimo</div>
-            <div class="info-item__value">R$ 129,50</div>
-          </div>
-          <div>
-            <div class="info-item__label">Funcionamento</div>
-            <div class="info-item__value">Seg–Sex · 07h–16h48</div>
-          </div>
-          <div>
-            <div class="info-item__label">Pagamento</div>
-            <div class="info-item__value">Pix · Cartão · VR</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUTOS -->
-    <section class="section" aria-labelledby="produtos-title">
-      <div class="wrap">
-        <div class="section__head">
-          <span class="section__label">Cardápio</span>
-          <h2 class="section__title" id="produtos-title">Refeições, Sopas &amp; Lanches</h2>
-          <p class="section__lead">Imagens de exemplo — o cardápio muda toda semana com sabores novos!</p>
-        </div>
-
-        <div class="products-grid">
-          <div class="product-card">
-            <img src="assets/images/img01.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img02.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img03.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img05.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img07.jpg" alt="Sopa Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Pra noite</div>
-              <div class="product-card__name">Sopas e caldos</div>
-              <div class="product-card__price">R$ 15,80</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/Cards-QueTal-croissant.jpg" alt="Croissant Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Lanche</div>
-              <div class="product-card__name">Croissants &amp; Chipas</div>
-              <div class="product-card__price">A partir de R$ 15,00</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img09.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/images/img11.jpg" alt="Prato Que Tal Congelados" class="product-card__img" loading="lazy" decoding="async" width="240" height="240">
-            <div class="product-card__body">
-              <div class="product-card__tag">Refeição</div>
-              <div class="product-card__name">Prato da semana</div>
-              <div class="product-card__price">A partir de R$ 27,50</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align:center;margin-top:2rem">
-          <a
-            href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
-            class="btn btn--outline"
-            target="_blank" rel="noopener noreferrer"
-          >
-            Ver cardápio completo →
+    <!-- Corpo do hero -->
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <p class="hero__eyebrow t-label-lg">Refeições ultracongeladas artesanais</p>
+        <h1 id="hero-heading" class="hero__headline t-display-lg">
+          Refeições que parecem ter levado a tarde toda
+        </h1>
+        <p class="hero__lead t-body-lg">
+          Ingredientes naturais, cozinha artesanal e tecnologia de ultracongelamento.<br>
+          Sem conservantes. Pronto em 8 minutos.
+        </p>
+        <div class="hero__ctas" id="hero-cta">
+          <a href="https://wa.me/5571996550630?text=Ol%C3%A1%21+Vim+pelo+site+e+quero+fazer+um+pedido."
+             class="btn btn--accent btn--lg"
+             data-wpp
+             target="_blank" rel="noopener noreferrer">
+            <span class="ms" aria-hidden="true">whatsapp</span>
+            Peça pelo WhatsApp
+          </a>
+          <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+             class="btn btn--outlined-inv btn--lg"
+             data-pixel-checkout
+             target="_blank" rel="noopener noreferrer">
+            <span class="ms" aria-hidden="true">menu_book</span>
+            Ver Cardápio
           </a>
         </div>
       </div>
+      <div class="hero__media" aria-hidden="true">
+        <!-- TODO: substituir por hero shot 45° conforme brief fotográfico do brand kit -->
+        <img src="assets/images/img12.jpg"
+             alt=""
+             width="560" height="500"
+             fetchpriority="high"
+             class="hero__img" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       CONTEÚDO PRINCIPAL
+  ═══════════════════════════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- ── Promise strip ──────────────────────────────────────── -->
+    <section class="promise-strip section--creme" aria-label="Nossos diferenciais">
+      <div class="wrap promise-strip__grid">
+
+        <div class="info-chip">
+          <span class="ms ms--lg info-chip__icon" aria-hidden="true">ac_unit</span>
+          <span>
+            <strong class="info-chip__text">Ultracongelamento</strong>
+            <span class="info-chip__sub">Sabor e nutrição preservados</span>
+          </span>
+        </div>
+
+        <div class="info-chip">
+          <span class="ms ms--lg info-chip__icon" aria-hidden="true">microwave</span>
+          <span>
+            <strong class="info-chip__text">Pronto em 8 min</strong>
+            <span class="info-chip__sub">Sem forno, sem panela</span>
+          </span>
+        </div>
+
+        <div class="info-chip">
+          <span class="ms ms--lg info-chip__icon" aria-hidden="true">eco</span>
+          <span>
+            <strong class="info-chip__text">100% naturais</strong>
+            <span class="info-chip__sub">Zero conservantes</span>
+          </span>
+        </div>
+
+        <div class="info-chip">
+          <span class="ms ms--lg info-chip__icon" aria-hidden="true">delivery_dining</span>
+          <span>
+            <strong class="info-chip__text">Entrega em 48h</strong>
+            <span class="info-chip__sub">Salvador e RMS</span>
+          </span>
+        </div>
+
+      </div>
     </section>
 
-    <!-- KITS -->
-    <section class="section section--alt" aria-labelledby="kits-title">
+    <!-- ── Cardápio em destaque [BRAND] ───────────────────────── -->
+    <section id="cardapio" class="section section--creme" aria-labelledby="cardapio-heading">
       <div class="wrap">
-        <div class="section__head">
-          <span class="section__label">Economize mais</span>
-          <h2 class="section__title" id="kits-title">Monte seu kit com desconto</h2>
-          <p class="section__lead">Quanto mais refeições, maior o desconto. Congele e não fique sem!</p>
-        </div>
 
-        <div class="kits-row">
-          <div class="kit-card">
-            <div class="kit-card__discount">5%</div>
-            <div class="kit-card__label">OFF · 11 a 20 refeições</div>
-            <div class="kit-card__price">A partir de R$ 270,60</div>
-          </div>
-          <div class="kit-card">
-            <div class="kit-card__discount">8%</div>
-            <div class="kit-card__label">OFF · 21 a 30 refeições</div>
-            <div class="kit-card__price">A partir de R$ 500,43</div>
-          </div>
-          <div class="kit-card">
-            <div class="kit-card__discount">10%</div>
-            <div class="kit-card__label">OFF · 31 a 40 refeições</div>
-            <div class="kit-card__price">A partir de R$ 722,61</div>
-          </div>
-          <div class="kit-card">
-            <div class="kit-card__discount">12%</div>
-            <div class="kit-card__label">OFF · +40 refeições</div>
-            <div class="kit-card__price">A partir de R$ 911,60</div>
-          </div>
-        </div>
+        <header class="section-header">
+          <span class="section-header__eyebrow">Cardápio · esta semana</span>
+          <h2 id="cardapio-heading" class="t-headline-lg section-header__title">
+            Do almoço ao lanche,<br>tudo preparado com capricho
+          </h2>
+          <p class="section-header__lead">
+            Cardápio rotativo semanal. Veja o que tem disponível agora.
+          </p>
+        </header>
 
-        <div style="text-align:center;margin-top:2rem">
-          <a
-            href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
-            class="btn btn--primary"
-            target="_blank" rel="noopener noreferrer"
-          >
-            Montar meu kit →
+        <div class="grid-4">
+
+          <article class="product-card" data-product-name="Frango ao Molho de Ervas com Purê">
+            <div class="product-card__img-wrap">
+              <span class="badge badge--new">Semana</span>
+              <img class="product-card__img" src="assets/images/img01.jpg"
+                   alt="Frango ao molho de ervas com purê de batata" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Frango ao Molho de Ervas com Purê</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Carne ao Molho Roti com Arroz e Feijão">
+            <div class="product-card__img-wrap">
+              <span class="badge badge--top">Popular</span>
+              <img class="product-card__img" src="assets/images/img02.jpg"
+                   alt="Carne ao molho roti com arroz e feijão" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Carne ao Molho Roti com Arroz e Feijão</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Peixe Grelhado com Legumes no Vapor">
+            <div class="product-card__img-wrap">
+              <img class="product-card__img" src="assets/images/img03.jpg"
+                   alt="Peixe grelhado com legumes no vapor" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Peixe Grelhado com Legumes no Vapor</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Frango na Chapa com Quinoa e Salada">
+            <div class="product-card__img-wrap">
+              <span class="badge badge--promo">Novo</span>
+              <img class="product-card__img" src="assets/images/img05.jpg"
+                   alt="Frango na chapa com quinoa e salada" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Frango na Chapa com Quinoa e Salada</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Carne Moída ao Sugo com Massa">
+            <div class="product-card__img-wrap">
+              <img class="product-card__img" src="assets/images/img09.jpg"
+                   alt="Carne moída ao sugo com massa" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Carne Moída ao Sugo com Massa</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Frango Xadrez com Arroz Branco">
+            <div class="product-card__img-wrap">
+              <img class="product-card__img" src="assets/images/img11.jpg"
+                   alt="Frango xadrez com arroz branco" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Refeição</p>
+              <h3 class="product-card__name">Frango Xadrez com Arroz Branco</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;27,50</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Sopas e Caldos">
+            <div class="product-card__img-wrap">
+              <img class="product-card__img" src="assets/images/img07.jpg"
+                   alt="Sopas e caldos artesanais" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Pra noite</p>
+              <h3 class="product-card__name">Sopas e Caldos</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;15,80</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-name="Croissants e Chipas">
+            <div class="product-card__img-wrap">
+              <span class="badge badge--limited">Especial</span>
+              <img class="product-card__img" src="assets/images/Cards-QueTal-croissant.jpg"
+                   alt="Croissants e chipas artesanais" width="320" height="320" loading="lazy" />
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Lanche</p>
+              <h3 class="product-card__name">Croissants &amp; Chipas</h3>
+            </div>
+            <div class="product-card__footer">
+              <span class="product-card__price">R$&nbsp;15,00</span>
+              <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+                 class="btn btn--filled btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+        </div><!-- .grid-4 -->
+
+        <div class="text-center" style="margin-top:var(--sp-6)">
+          <a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cardapio"
+             class="btn btn--outlined" data-pixel-checkout
+             target="_blank" rel="noopener noreferrer">
+            <span class="ms" aria-hidden="true">menu_book</span>
+            Ver cardápio completo
           </a>
         </div>
-      </div>
+
+      </div><!-- .wrap -->
     </section>
 
-    <!-- DIFERENCIAIS -->
-    <section class="section" aria-labelledby="diferenciais-title">
+    <!-- ── Kits & Combos [BRAND] ──────────────────────────────── -->
+    <section id="kits" class="section section--var" aria-labelledby="kits-heading">
       <div class="wrap">
-        <div class="section__head">
-          <span class="section__label">Por que a Que Tal?</span>
-          <h2 class="section__title" id="diferenciais-title">Qualidade que você sente na primeira garfada</h2>
-        </div>
 
-        <div class="features-grid">
-          <div class="feature">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="feature__title">Cardápio semanal</div>
-            <p class="feature__desc">Sabores novos toda semana — nunca enjoa e sempre tem o gosto de comida caseira.</p>
+        <header class="section-header">
+          <span class="section-header__eyebrow">Kits e combos</span>
+          <h2 id="kits-heading" class="t-headline-lg section-header__title">
+            Quanto mais você pede,<br>mais você economiza
+          </h2>
+        </header>
+
+        <div class="kits-grid">
+
+          <!-- Card hero — grande, Bordô -->
+          <div class="kit-card kit-card--hero">
+            <p class="kit-card__label">Até</p>
+            <p class="kit-card__discount" aria-label="12% de desconto">12%</p>
+            <p class="kit-card__sublabel">de desconto</p>
+            <p class="kit-card__desc t-body-md">Monte seu kit com mais de 40 refeições e receba tudo de uma vez, economizando.</p>
+            <a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
+               class="btn btn--accent" data-pixel-checkout
+               target="_blank" rel="noopener noreferrer">
+              <span class="ms" aria-hidden="true">shopping_cart</span>
+              Montar meu kit
+            </a>
           </div>
-          <div class="feature">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+
+          <!-- Tiers de desconto -->
+          <div class="kits-tiers">
+
+            <div class="kit-tier-card">
+              <div class="kit-tier-card__left">
+                <p class="kit-tier-card__discount t-label-lg">5% OFF</p>
+                <p class="t-body-sm">11–20 refeições</p>
+              </div>
+              <div class="kit-tier-card__right">
+                <p class="t-label-sm">a partir de</p>
+                <p class="t-title-md">R$&nbsp;270,60</p>
+              </div>
+              <a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
+                 class="btn btn--text btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Montar kit com 5% de desconto">
+                Montar <span class="ms ms--sm" aria-hidden="true">arrow_forward</span>
+              </a>
             </div>
-            <div class="feature__title">100% naturais</div>
-            <p class="feature__desc">Sem conservantes artificiais. Temperos exclusivos com 15 anos de receita.</p>
-          </div>
-          <div class="feature">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+
+            <div class="kit-tier-card">
+              <div class="kit-tier-card__left">
+                <p class="kit-tier-card__discount t-label-lg">8% OFF</p>
+                <p class="t-body-sm">21–30 refeições</p>
+              </div>
+              <div class="kit-tier-card__right">
+                <p class="t-label-sm">a partir de</p>
+                <p class="t-title-md">R$&nbsp;500,43</p>
+              </div>
+              <a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
+                 class="btn btn--text btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Montar kit com 8% de desconto">
+                Montar <span class="ms ms--sm" aria-hidden="true">arrow_forward</span>
+              </a>
             </div>
-            <div class="feature__title">Delivery em Salvador</div>
-            <p class="feature__desc">Entrega em toda Salvador e região. Em 48h úteis, chega congelado na sua porta.</p>
-          </div>
-          <div class="feature">
-            <div class="feature__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+
+            <div class="kit-tier-card">
+              <div class="kit-tier-card__left">
+                <p class="kit-tier-card__discount t-label-lg">10% OFF</p>
+                <p class="t-body-sm">31–40 refeições</p>
+              </div>
+              <div class="kit-tier-card__right">
+                <p class="t-label-sm">a partir de</p>
+                <p class="t-title-md">R$&nbsp;722,61</p>
+              </div>
+              <a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
+                 class="btn btn--text btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Montar kit com 10% de desconto">
+                Montar <span class="ms ms--sm" aria-hidden="true">arrow_forward</span>
+              </a>
             </div>
-            <div class="feature__title">Ultracongelamento</div>
-            <p class="feature__desc">Processo industrial de resfriamento rápido — preserva sabor, textura e nutrientes.</p>
-          </div>
-        </div>
-      </div>
+
+            <div class="kit-tier-card kit-tier-card--highlight">
+              <div class="kit-tier-card__left">
+                <p class="kit-tier-card__discount t-label-lg">12% OFF</p>
+                <p class="t-body-sm">+40 refeições</p>
+              </div>
+              <div class="kit-tier-card__right">
+                <p class="t-label-sm">a partir de</p>
+                <p class="t-title-md">R$&nbsp;911,60</p>
+              </div>
+              <a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits"
+                 class="btn btn--text btn--sm" data-pixel-checkout
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Montar kit com 12% de desconto">
+                Montar <span class="ms ms--sm" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+
+          </div><!-- .kits-tiers -->
+        </div><!-- .kits-grid -->
+
+      </div><!-- .wrap -->
     </section>
 
-    <!-- DEPOIMENTOS -->
-    <section class="section section--alt" aria-labelledby="depoimentos-title">
+    <!-- ── Como funciona ──────────────────────────────────────── -->
+    <section id="como-funciona" class="section section--creme" aria-labelledby="como-heading">
       <div class="wrap">
-        <div class="section__head">
-          <span class="section__label">Clientes</span>
-          <h2 class="section__title" id="depoimentos-title">Quem experimentou voltou</h2>
-          <p class="section__lead">Experiências reais de quem já pediu e se apaixonou.</p>
-        </div>
-        <div class="testimonials-row">
-          <img src="assets/images/depoimento01.jpg" alt="Depoimento de cliente" loading="lazy" decoding="async" width="240" height="240">
-          <img src="assets/images/dep02.jpg"        alt="Depoimento de cliente" loading="lazy" decoding="async" width="240" height="240">
-          <img src="assets/images/dep04.jpg"        alt="Depoimento de cliente" loading="lazy" decoding="async" width="240" height="240">
-        </div>
+
+        <header class="section-header text-center">
+          <span class="section-header__eyebrow">Simples assim</span>
+          <h2 id="como-heading" class="t-headline-lg section-header__title">
+            Da escolha à mesa em três passos
+          </h2>
+        </header>
+
+        <ol class="how-steps" aria-label="Como funciona">
+
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">01</span>
+            <div class="how-step__content">
+              <h3 class="how-step__title t-title-lg">Escolha</h3>
+              <p class="t-body-md">Monte sua cesta no site com as refeições da semana. Kits com desconto a partir de 11 refeições.</p>
+            </div>
+          </li>
+
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">02</span>
+            <div class="how-step__content">
+              <h3 class="how-step__title t-title-lg">Receba congelado</h3>
+              <p class="t-body-md">Entregamos em Salvador e RMS em bolsas térmicas. Taxa fixa R$&nbsp;15,50. Pedido mínimo R$&nbsp;129,50.</p>
+            </div>
+          </li>
+
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">03</span>
+            <div class="how-step__content">
+              <h3 class="how-step__title t-title-lg">Aqueça em 8 min</h3>
+              <p class="t-body-md">Direto para o micro-ondas ou banho-maria. Sem descongelar. Sem panela. Pronto.</p>
+            </div>
+          </li>
+
+        </ol>
+
       </div>
     </section>
 
-    <!-- SEO -->
-    <section class="section seo-section" aria-labelledby="seo-title">
+    <!-- ── Prova social [BRAND] — Bordô ──────────────────────── -->
+    <section class="section section--bordo" aria-labelledby="depoimentos-heading">
+      <div class="wrap">
+
+        <h2 id="depoimentos-heading" class="sr-only">Depoimentos de clientes</h2>
+
+        <!-- Pull-quote principal -->
+        <blockquote class="testimonial-quote">
+          <p>"Finalmente comida congelada que parece caseira. Minha família não acredita que saiu do freezer."</p>
+          <cite class="testimonial-quote__cite">— Ana Paula S., Salvador</cite>
+        </blockquote>
+
+        <!-- Três depoimentos menores -->
+        <div class="grid-3" style="margin-top:var(--sp-7)">
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Praticidade sem abrir mão de qualidade. Em 8 minutos tenho um prato que parece feito na hora. Virou rotina aqui em casa."
+            </blockquote>
+            <cite class="testimonial-card__author">Carlos M. &nbsp;·&nbsp; cliente há 1 ano</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Compro toda semana desde que conheci. O cardápio muda regularmente e os sabores são sempre surpreendentes."
+            </blockquote>
+            <cite class="testimonial-card__author">Fernanda L. &nbsp;·&nbsp; cliente há 8 meses</cite>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+              <span class="ms ms--filled ms--sm" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Fiz o kit de 30 refeições e a economia foi real. Ótimo custo-benefício para quem não tem tempo de cozinhar durante a semana."
+            </blockquote>
+            <cite class="testimonial-card__author">Roberto S. &nbsp;·&nbsp; cliente há 6 meses</cite>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Sobre / SEO block ───────────────────────────────────── -->
+    <section id="sobre" class="section section--creme" aria-labelledby="sobre-heading">
       <div class="wrap--narrow">
-        <div class="section__head">
-          <h2 class="section__title" id="seo-title">Marmitas ultracongeladas em Salvador</h2>
+
+        <header class="section-header">
+          <span class="section-header__eyebrow">Quem somos</span>
+          <h2 id="sobre-heading" class="t-headline-md section-header__title">
+            Mais de 18 anos de expertise em gastronomia
+          </h2>
+        </header>
+
+        <div class="t-body-lg sobre-text">
+          <p>Que Tal Congelados é especialista em refeições ultracongeladas e marmitas ultracongeladas em Salvador. Nossa tecnologia de ultracongelamento preserva o sabor e os nutrientes originais, entregando a excelência de uma refeição sofisticada pronta em minutos — sem conservantes, sem realçadores artificiais de sabor.</p>
+          <p>Com DNA em mais de 15 anos no ramo da alimentação e raízes na marca <strong>Così Buono</strong>, somos uma empresa 100% digital que nunca perdeu o capricho e o toque artesanal. Atendemos de segunda a sexta, das 07h às 16h40, com entrega em Salvador e Região Metropolitana.</p>
+          <p>
+            Conheça nossa <a href="quem-somos.html">história completa</a>.
+            Consulte também a <a href="politica-de-privacidade.html">Política de Privacidade</a>,
+            a <a href="politica-de-entrega.html">Política de Entrega</a>
+            e os <a href="termos-e-condicoes.html">Termos e Condições</a>.
+          </p>
         </div>
-        <p>A <strong>Que Tal Congelados</strong> é especialista em <strong>refeições ultracongeladas</strong> e <strong>marmitas ultracongeladas em Salvador</strong>. Nossas refeições são preparadas e resfriadas rapidamente para preservar sabor, textura e valor nutricional — ideais para quem busca praticidade sem abrir mão de qualidade.</p>
 
-        <h3>Por que comida ultracongelada?</h3>
-        <p>A <strong>comida ultracongelada</strong> conserva por mais tempo com mínimo uso de conservantes. Na Que Tal aplicamos processos controlados: preparo artesanal, resfriamento rápido e embalagem adequada.</p>
-
-        <h3>Onde entregamos</h3>
-        <p>Atendemos Salvador e região. Para empresas e eventos, fornecemos soluções em marmitas ultracongeladas com logística adaptada. Entre em contato pelo WhatsApp e descubra o plano ideal.</p>
       </div>
     </section>
 
-  </main>
+  </main><!-- #main -->
 
-  <!-- CTA BAND -->
-  <section class="cta-band" aria-label="Chamada para pedido">
-    <div class="wrap--narrow">
-      <h2 class="cta-band__title">Pronto para experimentar?</h2>
-      <p class="cta-band__sub">Atendemos de Segunda a Sexta, das 07h às 16h48. Fale com a gente agora!</p>
-      <div class="cta-row">
-        <button id="ctaWhatsApp2" class="btn btn--wpp" aria-label="Peça pelo WhatsApp agora">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.554 4.11 1.523 5.84L.057 23.217a.75.75 0 0 0 .924.924l5.377-1.466A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.512-5.21-1.404l-.374-.217-3.88 1.058 1.02-3.768-.23-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Peça pelo WhatsApp
-        </button>
-        <a
-          href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=cta-band"
-          class="btn btn--outline"
-          target="_blank" rel="noopener noreferrer"
-          style="color:rgba(232,125,13,.38);border-color:rgba(255,255,255,.4)"
-        >
-          Ver Cardápio
-        </a>
-      </div>
+  <!-- ═══════════════════════════════════════════════════════════
+       CTA FINAL [BRAND] — Bordô full-bleed
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section section--bordo cta-final" aria-labelledby="cta-heading">
+    <div class="wrap text-center">
+      <h2 id="cta-heading" class="cta-final__title t-display-sm">
+        Que tal experimentar?
+      </h2>
+      <p class="cta-final__sub t-body-lg">
+        Taxa de entrega R$&nbsp;15,50. Pedido mínimo R$&nbsp;129,50.
+      </p>
+      <a href="https://wa.me/5571996550630?text=Ol%C3%A1%21+Vim+pelo+site+e+quero+fazer+um+pedido."
+         class="btn btn--accent btn--lg" data-wpp
+         target="_blank" rel="noopener noreferrer">
+        <span class="ms" aria-hidden="true">whatsapp</span>
+        Peça pelo WhatsApp
+      </a>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
   <footer class="footer" role="contentinfo">
-    <div class="wrap--narrow">
-      <span class="footer__brand">Que Tal Congelados</span>
-      <p>
-        <a href="tel:+5571996550630">+55 71 99655-0630</a> &nbsp;·&nbsp;
-        <a href="https://instagram.com/quetalcongelados" target="_blank" rel="noopener noreferrer">@quetalcongelados</a>
-      </p>
-      <p>
-        <a href="/politica-de-privacidade">Política de Privacidade</a> &nbsp;·&nbsp;
-        <a href="/politica-de-devolucao">Política de Devolução</a> &nbsp;·&nbsp;
-        <a href="/sitemap.xml">Sitemap</a>
-      </p>
-      <hr class="footer__divider">
-      <p class="footer__legal">
-        Razão Social: Que Tal Alimentos LTDA &nbsp;·&nbsp; CNPJ: 54.313.265/0001-79<br>
-        Rua Vila Romana, nº 51, loja 001, Itapuã — Salvador/BA — CEP: 41.635-030<br>
-        © Que Tal Congelados 2026<br><br>
-        This site is not part of the Facebook website or Facebook Inc. FACEBOOK is a trademark of FACEBOOK, Inc.
-      </p>
+    <div class="wrap footer-inner footer-inner--main">
+
+      <div class="footer-brand">
+        <a href="/" aria-label="Que Tal Congelados — página inicial">
+          <img src="assets/images/logos/logo-horizontal-dark.png"
+               alt="Que Tal Congelados"
+               width="168" height="40"
+               loading="lazy" />
+        </a>
+        <p class="footer-brand__tagline t-body-sm">Saúde e sabor para toda medida.</p>
+        <a href="https://www.instagram.com/quetalcongelados/"
+           class="footer-brand__social t-label-sm"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram da Que Tal Congelados">
+          <span class="ms ms--sm" aria-hidden="true">photo_camera</span>
+          @quetalcongelados
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__heading">Contato</h3>
+        <ul>
+          <li><a href="https://wa.me/5571996550630" data-wpp target="_blank" rel="noopener noreferrer">(71) 99655-0630 (WhatsApp)</a></li>
+          <li><a href="mailto:contato@quetalcongelados.com.br">contato@quetalcongelados.com.br</a></li>
+          <li><p>Seg–Sex · 07h às 16h40</p></li>
+          <li><p>R. Vila Romana, 53 — Itapuã<br>CEP 41.635-030 · Salvador / BA</p></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__heading">Institucional</h3>
+        <ul>
+          <li><a href="quem-somos.html">Quem somos</a></li>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+          <li><a href="politica-de-entrega.html">Política de Entrega</a></li>
+          <li><a href="politica-de-devolucao.html">Trocas e Devoluções</a></li>
+          <li><a href="termos-e-condicoes.html">Termos e Condições</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__heading">Fazer pedido</h3>
+        <ul>
+          <li><a href="https://pedidos.quetalcongelados.com.br/?utm_source=landing&utm_medium=site&utm_campaign=footer" target="_blank" rel="noopener noreferrer" data-pixel-checkout>Acessar plataforma</a></li>
+          <li><a href="https://pedidos.quetalcongelados.com.br/quetalcongelados/cardapio/kits?utm_source=landing&utm_medium=site&utm_campaign=kits_footer" target="_blank" rel="noopener noreferrer" data-pixel-checkout>Kits com desconto</a></li>
+          <li><a href="https://wa.me/5571996550630?text=Ol%C3%A1%21+Quero+saber+mais+sobre+os+kits." data-wpp target="_blank" rel="noopener noreferrer">Falar com atendimento</a></li>
+        </ul>
+      </div>
+
+    </div><!-- .wrap -->
+
+    <div class="footer-bottom">
+      <div class="wrap footer-bottom__inner">
+        <p>© 2026 Que Tal Alimentos LTDA &nbsp;·&nbsp; CNPJ 54.313.265/0001-79</p>
+        <p>
+          <a href="politica-de-cookies.html" data-cookie-manage>Gerenciar Cookies</a>
+          &nbsp;·&nbsp;
+          <a href="politica-de-privacidade.html">Privacidade</a>
+        </p>
+      </div>
     </div>
+
   </footer>
 
-  <script>
-    (function(){
-      var phone = "5571996550630";
-      var msg = "Olá,%20vim%20do%20site%20quetalcongelados.com.br%20e%20gostaria%20de%20saber%20sobre%20o%20serviço%20de%20vocês.%20[NÃO%20ALTERE%20ESSA%20MENSAGEM]";
+  <!-- FAB WhatsApp — fixo bottom-right -->
+  <a id="fab-wpp"
+     class="fab-wpp is-hidden"
+     href="https://wa.me/5571996550630?text=Ol%C3%A1%21+Vim+pelo+site+e+quero+fazer+um+pedido."
+     data-wpp
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Fazer pedido pelo WhatsApp">
+    <span class="ms" aria-hidden="true">whatsapp</span>
+  </a>
 
-      function loadCookieLib(cb){
-        var s=document.createElement('script');
-        s.src='https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js';
-        s.onload=cb;document.head.appendChild(s);
-      }
+  <!-- Scripts — defer, sem bloqueio de renderização -->
+  <!-- Pixel NÃO é carregado aqui — consent gate em cookie-consent.js -->
+  <script defer src="assets/js/cookie-consent.js"></script>
+  <script defer src="assets/js/site.js"></script>
 
-      function fireWhatsApp(){
-        loadCookieLib(function(){
-          var c = "quetal";
-          if(typeof Cookies !== 'undefined' && Cookies.get(c)===undefined){
-            Cookies.set(c,'contato',{expires:1,path:''});
-            if(typeof fbq==='function'){
-              fbq('track','Contact');
-              fbq('trackCustom','ev-info-pelo-whatsapp');
-            }
-          }
-          setTimeout(function(){
-            window.location.href = "https://wa.me/"+phone+"?text="+msg;
-          },300);
-        });
-      }
-
-      document.querySelectorAll('#ctaWhatsApp,#ctaWhatsApp2,.btn-zap').forEach(function(el){
-        el.addEventListener('click',function(e){e.preventDefault();fireWhatsApp();});
-      });
-
-      /* UTM tracking */
-      (function(){
-        var u=new URL(window.location.href);
-        var p=u.pathname.replace(/^\/|\/$/g,'')||'home';
-        var r=document.referrer?document.referrer.replace(/^https?:\/\//,''):'';
-        window.__QT_UTM={
-          utm_source:   u.searchParams.get('utm_source')   || r || 'landingnova',
-          utm_medium:   u.searchParams.get('utm_medium')   || 'site',
-          utm_campaign: u.searchParams.get('utm_campaign') || 'sem-indicacao',
-          utm_content:  u.searchParams.get('utm_content')  || p || 'Home',
-          utm_term:     u.searchParams.get('utm_term')     || ''
-        };
-      })();
-    })();
-  </script>
 </body>
 </html>

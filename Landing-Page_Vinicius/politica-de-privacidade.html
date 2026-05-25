@@ -1,459 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1" />
-
-  <title>Política de Privacidade — Que Tal Congelados</title>
-  <meta name="description"
-    content="Política de Privacidade da Que Tal Congelados — como coletamos, usamos e protegemos seus dados." />
-  <link rel="canonical" href="https://quetalcongelados.com.br/politica-de-privacidade" />
-  <meta name="robots" content="index, follow" />
-  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
-
-  <!-- Open Graph -->
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Política de Privacidade — Que Tal Congelados" />
-  <meta property="og:description"
-    content="Não abrimos mão de entregar produtos com sabor e qualidade. Saiba como tratamos seus dados." />
-  <meta property="og:url" content="https://quetalcongelados.com.br/politica-de-privacidade" />
-  <meta property="og:site_name" content="Que Tal Congelados" />
-  <meta property="og:image"
-    content="https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Performance hints -->
-  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-
-  <!-- External styles (mantidos) -->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link href="assets/fonts/style.css" rel="stylesheet">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-  <!-- JSON-LD: Organization + WebSite + LocalBusiness (com taxID/CNPJ) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://quetalcongelados.com.br/#org",
-        "name":"Que Tal Congelados",
-        "url":"https://quetalcongelados.com.br/",
-        "logo":"https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png",
-        "taxID":"54.313.265/0001-79",
-        "contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"contato@quetalcongelados.com.br"}]
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://quetalcongelados.com.br/#website",
-        "url":"https://quetalcongelados.com.br/",
-        "name":"Que Tal Congelados",
-        "publisher":{"@id":"https://quetalcongelados.com.br/#org"},
-        "privacyPolicy":"https://quetalcongelados.com.br/politica-de-privacidade"
-      },
-      {
-        "@type":"LocalBusiness",
-        "@id":"https://quetalcongelados.com.br/#local",
-        "name":"Que Tal Congelados",
-        "priceRange": "$$",
-        "telephone":"+55 71 9.9655-0630",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"Rua Vila Romana, 53. Itapuã",
-          "addressLocality":"Salvador",
-          "addressRegion":"Bahia",
-          "postalCode":"41.635-030",
-          "addressCountry":"BR"
-        },
-        "url":"https://quetalcongelados.com.br/"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Facebook Pixel (preservado) -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '715987632674351');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=715987632674351&ev=PageView&noscript=1" /></noscript>
-
-  <!-- Inline styles: clean, centered, logo controlled -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviso e Política de Privacidade — Que Tal Congelados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* Page-level */
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color: #222;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f7f8fa;
-      /* leve fundo neutro para contraste com container branco */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary:        #7A0F14;
+      --primary-dim:    #4A0B0E;
+      --primary-ctr:    #FAE6E8;
+      --secondary:      #DC8B1F;
+      --tertiary:       #B65225;
+      --surface:        #FAF6EE;
+      --surface-var:    #F1ECE4;
+      --on-surface:     #1B1814;
+      --on-surface-var: #544F49;
+      --outline-var:    #E3DED7;
     }
-
-    /* Central container (white card) */
-    .container {
-      max-width: 980px;
-      margin: 32px auto;
-      background: #fff;
-      padding: 28px;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(12, 20, 30, 0.06);
-      text-align: left;
-      /* manter leitura natural */
-    }
-
-    /* Logo / header */
-    .logo-wrap {
-      text-align: center;
-      margin-bottom: 18px;
-    }
-
-    .logo-wrap img,
-    .logo-wrap-img {
-      max-width: 220px;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      object-fit: contain;
-      max-height: 120px;
-    }
-
-    header h1 {
-      margin: 0 0 6px 0;
-      font-size: 1.6rem;
-    }
-
-    header p.lead {
-      margin: 0 0 18px 0;
-      color: #555;
-    }
-
-    h2 {
-      margin-top: 22px;
-      color: #0b3a66;
-    }
-
-    section {
-      margin-bottom: 14px;
-    }
-
-    .muted {
-      color: #666;
-      font-size: 0.95rem;
-    }
-
-    .note {
-      background: #f1f9ff;
-      border-left: 4px solid #b6e0fe;
-      padding: 10px 12px;
-      border-radius: 6px;
-      margin: 10px 0;
-    }
-
-    footer {
-      margin-top: 18px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    a {
-      color: #0b66c3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    dl {
-      margin: 10px 0 0 0;
-    }
-
-    dt {
-      font-weight: 700;
-      margin-top: 8px;
-    }
-
-    dd {
-      margin: 0 0 8px 0;
-      color: #444;
-    }
-
-    .small {
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    /* Make lists readable while centered as a block */
-    .center-block {
-      display: block;
-      text-align: left;
-      margin: 0 auto;
-    }
-
-    /* Responsive */
-    @media (max-width: 767px) {
-      .container {
-        margin: 18px 12px;
-        padding: 18px;
-      }
-
-      header h1 {
-        font-size: 1.4rem;
-      }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; min-height: 100vh; }
+    .page-header { background: var(--primary); padding: 16px 40px; display:flex; align-items:center; }
+    .header-logo { height: 52px; width: auto; display: block; }
+    .wrapper { max-width: 860px; margin: 0 auto; padding: 32px 20px 56px; }
+    .card { background: #FFFBF3; border: 1px solid var(--outline-var); border-radius: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.04); overflow: hidden; }
+    .card-header { background: var(--primary-ctr); padding: 32px 40px 24px; border-bottom: 1px solid var(--outline-var); }
+    h1 { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--primary); line-height: 1.25; margin-bottom: 6px; }
+    .doc-meta { font-size: 12px; color: var(--on-surface-var); }
+    .card-body { padding: 32px 40px 40px; }
+    h2 { font-size: 13px; font-weight: 700; color: var(--tertiary); text-transform: uppercase; letter-spacing: 0.06em; margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--outline-var); }
+    h2:first-child { margin-top: 0; }
+    p  { font-size: 14px; line-height: 1.75; margin-bottom: 12px; }
+    ul { padding-left: 22px; margin-bottom: 12px; }
+    li { font-size: 14px; line-height: 1.75; margin-bottom: 6px; }
+    li strong { color: var(--primary-dim); }
+    a  { color: var(--primary); }
+    a:hover { color: var(--secondary); }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 13px; }
+    th { background: var(--primary-ctr); color: var(--primary-dim); font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 12px; border: 1px solid var(--outline-var); text-align: left; }
+    td { padding: 10px 12px; border: 1px solid var(--outline-var); vertical-align: top; }
+    tr:nth-child(even) td { background: var(--surface-var); }
+    .highlight-box { background: var(--primary-ctr); border-left: 4px solid var(--primary); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; font-size: 14px; }
+    .page-footer { background: var(--surface-var); border-top: 1px solid var(--outline-var); padding: 24px 40px; }
+    .footer-inner { max-width: 860px; margin: 0 auto; display: flex; gap: 40px; flex-wrap: wrap; }
+    .footer-col h4 { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; color: var(--on-surface); margin-bottom: 6px; }
+    .footer-col p { font-size: 12px; color: var(--on-surface-var); margin: 0; line-height: 1.6; }
+    @media (max-width: 600px) {
+      .page-header { padding: 14px 20px; }
+      .header-logo { height: 40px; }
+      .card-header, .card-body { padding: 24px 20px; }
+      .page-footer { padding: 20px; }
+      h1 { font-size: 22px; }
     }
   </style>
 </head>
-
 <body>
-  <section class="extSlider testimonials-slider cid-s02GhMse39" data-interval="false" id="kit1">
-    <div class="main container">
-      <!-- Logo -->
-      <div class="col-md-12" style="margin-bottom: 30px; margin-top: 0px;">
-        <div class="media-container-row image-row row">
-          <div class="mbr-figure img-logo logo-wrap">
-            <a href="/" aria-label="Que Tal Congelados - Página inicial">
-              <img src="https://quetalcongelados.com.br/assets/images/apresenta%C3%A7%C3%A3o%20quetal-6.png"
-                alt="Logo Que Tal Congelados" class="logo-wrap-img" title="Que Tal Congelados">
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Content -->
-      <div class="row">
-        <div class="col-md-12">
-          <main class="container" role="main" aria-labelledby="title" style="max-width:920px;">
-            <header>
-              <h1 id="title">Política de Privacidade — Que Tal Congelados</h1>
-              <p class="lead">Nós respeitamos sua privacidade (guardamos seus dados com cuidado — sem drama, só
-                segurança).</p>
-              <p class="muted"><strong>Última atualização:</strong> <em>16/10/2025</em></p>
-            </header>
+<header class="page-header">
+  <!-- Logo: logo-quetal.png (horizontal, fundo transparente) -->
+  <img src="assets/images/logos/logo-horizontal-color.png" alt="Que Tal Congelados" class="header-logo" />
+  <a href="index.html" style="margin-left:auto;font-size:13px;font-weight:600;color:rgba(255,255,255,.75);text-decoration:none;display:flex;align-items:center;gap:6px;">&#8592; Voltar ao site</a>
+</header>
 
-            <section id="quem-somos">
-              <h2>1. Quem somos e âmbito de aplicação</h2>
-              <p><strong>Controlador dos dados:</strong> Que Tal Congelados (CNPJ: <em>54.313.265/0001-79</em>).</p>
-              <p class="muted">Esta Política de Privacidade aplica-se a todos os usuários, clientes, assinantes e
-                visitantes que interagem com nossos serviços digitais (site, formulários, newsletter, sistema de
-                pedidos, etc.).</p>
-            </section>
-
-            <section id="principios-bases-legais">
-              <h2>2. Princípios e bases legais de tratamento</h2>
-              <p>Tratamos dados pessoais seguindo os princípios da Lei Geral de Proteção de Dados (LGPD — Lei nº
-                13.709/2018): finalidade, adequação, necessidade, transparência, segurança, prevenção e
-                responsabilização.</p>
-              <p class="muted">As bases legais que utilizamos incluem — conforme aplicável — consentimento, execução de
-                contrato, cumprimento de obrigação legal, legítimo interesse e proteção da vida.</p>
-            </section>
-
-            <section id="dados-coletados">
-              <h2>3. Dados que coletamos e como coletamos</h2>
-
-              <h3 class="small">3.1 Dados fornecidos por você</h3>
-              <p>Ao preencher formulários (ex.: cadastro, pedidos, download de conteúdo), podemos coletar:</p>
-              <ul class="center-block">
-                <li>Nome;</li>
-                <li>E-mail;</li>
-                <li>Telefone;</li>
-                <li>Endereço de entrega (quando aplicável);</li>
-                <li>Outros dados que você opte por fornecer.</li>
-              </ul>
-
-              <h3 class="small">3.2 Dados coletados automaticamente / navegação</h3>
-              <p>Ao visitar nosso site, podemos coletar informações técnicas, tais como:</p>
-              <ul class="center-block">
-                <li>Endereço IP e localização geográfica aproximada;</li>
-                <li>Tipo de navegador, sistema operacional e dispositivo;</li>
-                <li>Páginas acessadas, duração da visita e origem do tráfego;</li>
-                <li>Cookies e tecnologias semelhantes (pixels, local storage).</li>
-              </ul>
-
-              <h3 class="small">3.3 Histórico de interações</h3>
-              <p>Mantemos registros de interações, como conteúdos baixados, emails enviados/abertos e contatos
-                realizados com nosso suporte ou atendimento.</p>
-            </section>
-
-            <section id="cookies">
-              <h2>4. Cookies e tecnologias de rastreamento</h2>
-              <p>Utilizamos cookies para melhorar sua experiência, lembrar preferências e gerar estatísticas de uso.
-                Cookies não coletam automaticamente informações sensíveis sem seu consentimento.</p>
-              <p class="muted">Parceiros de publicidade (por exemplo, Google/AdSense) podem usar cookies ao exibir
-                anúncios, coletando dados técnicos como IP e tipo de navegador para personalização de anúncios. Você
-                pode desativar cookies nas configurações do seu navegador — atenção: isso pode afetar funcionalidades do
-                site.</p>
-              <div class="note">
-                <strong>Opt-out Google Analytics:</strong> para optar por não enviar dados ao Google Analytics, use a
-                ferramenta de opt-out da Google: <a href="https://tools.google.com/dlpage/gaoptout/" target="_blank"
-                  rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout/</a>.
-              </div>
-            </section>
-
-            <section id="finalidades">
-              <h2>5. Finalidades do uso dos dados</h2>
-              <p>Usamos os dados coletados para:</p>
-              <ul class="center-block">
-                <li>Enviar materiais, newsletters e conteúdos solicitados;</li>
-                <li>Processar pedidos, entregas e atender solicitações de suporte;</li>
-                <li>Personalizar sua experiência em nosso site;</li>
-                <li>Analisar métricas de uso e gerar relatórios internos;</li>
-                <li>Comunicar lançamentos, promoções e novidades (quando autorizado);</li>
-                <li>Realizar pesquisas e melhorias dos nossos serviços.</li>
-              </ul>
-              <p class="muted">Dados anonimizados podem ser divulgados em relatórios estatísticos. Dados pessoais
-                identificáveis só são compartilhados com seu consentimento ou por obrigação legal.</p>
-            </section>
-
-            <section id="compartilhamento">
-              <h2>6. Divulgação e compartilhamento de dados</h2>
-              <p>Podemos compartilhar dados com:</p>
-              <ul class="center-block">
-                <li>Fornecedores e parceiros que prestam serviços (ex.: plataformas de e-mail, CRM, logística);</li>
-                <li>Autoridades públicas ou judiciais quando exigido por lei;</li>
-                <li>Outros terceiros somente mediante seu consentimento explícito.</li>
-              </ul>
-              <p class="muted">Exigimos que nossos fornecedores mantenham nível adequado de segurança e assinem
-                contratos que limitam o uso dos dados.</p>
-            </section>
-
-            <section id="retencao">
-              <h2>7. Conservação dos dados</h2>
-              <p>Manteremos seus dados apenas pelo tempo necessário às finalidades descritas, observando obrigações
-                legais e prazos de prescrição aplicáveis. Após esse período, os dados serão eliminados ou anonimizados,
-                salvo obrigação legal em contrário.</p>
-            </section>
-
-            <section id="direitos">
-              <h2>8. Direitos dos titulares</h2>
-              <p>Conforme a LGPD, você tem direitos relativos aos seus dados pessoais, incluindo:</p>
-              <ol class="center-block">
-                <li>Confirmação da existência de tratamento;</li>
-                <li>Acesso aos dados;</li>
-                <li>Correção de dados incompletos ou inexatos;</li>
-                <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
-                <li>Portabilidade dos dados;</li>
-                <li>Eliminação de dados tratados com base no consentimento (sujeito a exceções legais);</li>
-                <li>Informação sobre compartilhamentos;</li>
-                <li>Revogação do consentimento;</li>
-                <li>Oposição ao tratamento com base em legítimo interesse;</li>
-                <li>Reclamação perante a Autoridade Nacional de Proteção de Dados (ANPD).</li>
-              </ol>
-              <p class="muted">Para exercer seus direitos, entre em contato via e-mail:
-                <strong>contato@quetalcongelados.com.br</strong>. Responderemos conforme prazos legais aplicáveis.</p>
-            </section>
-
-            <section id="seguranca">
-              <h2>9. Segurança e boas práticas</h2>
-              <p>Adotamos medidas técnicas e organizacionais para proteger seus dados (ex.: controles de acesso,
-                backups, criptografia quando aplicável). Contudo, nenhum sistema é 100% infalível; seguiremos boas
-                práticas para reduzir riscos.</p>
-            </section>
-
-            <section id="alteracoes">
-              <h2>10. Alterações desta política</h2>
-              <p>Podemos atualizar esta Política de Privacidade a qualquer momento. Mudanças relevantes serão publicadas
-                nesta página e, quando aplicável, comunicadas por e-mail.</p>
-            </section>
-
-            <section id="links-terceiros">
-              <h2>11. Links para sites de terceiros</h2>
-              <p>Nosso site pode conter links para sites de terceiros que possuem políticas próprias. Esta Política não
-                se aplica a sites externos; leia a política do site visitado antes de fornecer seus dados.</p>
-            </section>
-
-            <section id="contato-dpo">
-              <h2>12. Contato e encarregado (DPO)</h2>
-              <p>Para dúvidas, solicitações ou exercício de direitos, entre em contato:</p>
-              <dl>
-                <dt>Email</dt>
-                <dd><strong>contato@quetalcongelados.com.br</strong></dd>
-                <dt>Telefone</dt>
-                <dd>+55 71 9.9655-0630</dd>
-                <dt>Endereço</dt>
-                <dd>Rua Vila Romana, 53. Itapuã, Salvador - Bahia, Brasil</dd>
-              </dl>
-              <p class="muted">Podemos designar um encarregado de proteção de dados (DPO) para servir como canal entre
-                você, a Que Tal Congelados e a ANPD.</p>
-            </section>
-
-            <section id="disposicoes">
-              <h2>13. Disposições finais</h2>
-              <p>Ao usar nossos serviços, você concorda com os termos desta Política de Privacidade. Caso discorde,
-                recomendamos não utilizar nossos serviços digitais.</p>
-              <p class="small">Observação: este documento é uma base redigida com boas práticas e não substitui
-                aconselhamento jurídico. Recomendamos validação final por advogado especializado em proteção de dados
-                (LGPD).</p>
-            </section>
-
-            <footer>
-              <p class="muted">Se tiver dúvidas adicionais, fale com a gente: <a
-                  href="mailto:contato@quetalcongelados.com.br">contato@quetalcongelados.com.br</a></p>
-              <p class="small">© Que Tal Congelados — <em>2025</em></p>
-            </footer>
-          </main>
-        </div>
-      </div>
+<div class="wrapper">
+  <div class="card">
+    <div class="card-header">
+      <h1>Aviso e Política de Privacidade</h1>
+      <p class="doc-meta">Última atualização: 21 de maio de 2026 &nbsp;·&nbsp; Versão 1.0 &nbsp;·&nbsp; Que Tal Alimentos LTDA — CNPJ 54.313.265/0001-79</p>
     </div>
-  </section>
+    <div class="card-body">
 
-  <!-- Footer adaptado -->
-  <section once="footers" class="cid-s08kXujaOo" id="footer6-l">
-    <div class="container">
-      <div class="media-container-row align-center mbr-white">
-        <div class="col-12">
-          <p class="mbr-text mb-0 mbr-fonts-style display-7">
-            A Que Tal Congelados é conhecida pela nobreza de seus produtos, respeito ao consumidor e pelo compromisso
-            com a qualidade. <br />
-            Nosso contato: <strong>+55 71 9.9655-0630</strong>
-          </p>
-          <p class="mbr-text mb-0 mbr-fonts-style display-7" style="margin-top:.75rem;font-size:.85rem">
-            <a href="/politica-de-privacidade" style="color:inherit;text-decoration:underline">Política de Privacidade</a>
-            &nbsp;·&nbsp;
-            <a href="/politica-de-devolucao" style="color:inherit;text-decoration:underline">Política de Devolução</a>
-          </p>
-        </div>
+      <h2>1. Disposições Gerais e Conformidade com a LGPD</h2>
+      <p>Este documento detalha as operações de tratamento de dados pessoais realizadas pela <strong>Que Tal Alimentos LTDA</strong>, nome comercial <strong>Que Tal Congelados</strong>, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+      <p>Esta Política aplica-se a todos os ambientes digitais operados pela empresa:</p>
+      <ul>
+        <li><strong>Site institucional:</strong> quetalcongelados.com.br — informações sobre a empresa, produtos e blog. Não requer cadastro ou login.</li>
+        <li><strong>Plataforma de e-commerce:</strong> pedidos.quetalcongelados.com.br — compra de produtos, cadastro de clientes e processamento de pedidos.</li>
+      </ul>
+      <p>A Que Tal Congelados atua como <strong>Controladora</strong> dos dados pessoais coletados em ambos os ambientes.</p>
+
+      <h2>2. Dados Coletados e Finalidades</h2>
+      <p>O tipo de dado coletado varia conforme o ambiente acessado:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Dados Coletados</th>
+            <th>Finalidade</th>
+            <th>Ambiente</th>
+            <th>Base Legal (LGPD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Navegação</strong></td>
+            <td>IP, navegador, páginas visitadas, tempo de sessão.</td>
+            <td>Análise de tráfego, segurança e melhoria da experiência.</td>
+            <td>Ambos</td>
+            <td>Legítimo Interesse / Obrigação Legal.</td>
+          </tr>
+          <tr>
+            <td><strong>Cadastro</strong></td>
+            <td>Nome completo, CPF, e-mail, telefone, data de nascimento.</td>
+            <td>Identificação do cliente, faturamento fiscal e comunicação.</td>
+            <td>E-commerce</td>
+            <td>Execução de Contrato.</td>
+          </tr>
+          <tr>
+            <td><strong>Logístico</strong></td>
+            <td>Endereço de entrega.</td>
+            <td>Execução e roteirização das entregas.</td>
+            <td>E-commerce</td>
+            <td>Execução de Contrato.</td>
+          </tr>
+          <tr>
+            <td><strong>Fiscal</strong></td>
+            <td>CPF/CNPJ, dados fiscais, histórico de pedidos.</td>
+            <td>Emissão de Nota Fiscal Eletrônica (NF-e).</td>
+            <td>E-commerce</td>
+            <td>Obrigação Legal.</td>
+          </tr>
+          <tr>
+            <td><strong>Marketing</strong></td>
+            <td>Histórico de visualização de produtos, preferências.</td>
+            <td>Anúncios direcionados e remarketing.</td>
+            <td>Ambos</td>
+            <td>Consentimento do Titular.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Compartilhamento de Dados com Terceiros</h2>
+      <p>Os dados pessoais são compartilhados exclusivamente com:</p>
+      <ul>
+        <li><strong>Gateways de Pagamento:</strong> Processamento seguro de transações com cartão de crédito/débito e Pix.</li>
+        <li><strong>Operadora da Plataforma (Octofood):</strong> Hospedagem, desenvolvimento e manutenção da plataforma de e-commerce.</li>
+        <li><strong>Entregadores parceiros:</strong> Nome, endereço de entrega e telefone do cliente, necessários à execução da entrega.</li>
+        <li><strong>Autoridades Governamentais (SEFAZ):</strong> Transmissão de arquivos XML fiscais (NF-e).</li>
+        <li><strong>Plataformas de Marketing Digital (Meta e Google):</strong> Mediante consentimento do titular, para remarketing e mensuração de campanhas.</li>
+      </ul>
+      <p>Nenhum dado pessoal é vendido a terceiros.</p>
+
+      <h2>4. Segurança e Retenção dos Dados</h2>
+      <p>Os dados são armazenados em servidores com criptografia HTTPS/TLS e controles de acesso. Em caso de incidente que gere risco aos titulares, a Que Tal Congelados notificará os afetados e a ANPD nos termos do Artigo 48 da LGPD.</p>
+      <p>Dados transacionais são retidos pelo período exigido pela legislação tributária. Dados coletados com base exclusiva no consentimento são eliminados mediante solicitação do titular.</p>
+
+      <h2>5. Direitos dos Titulares</h2>
+      <p>Conforme o Artigo 18 da LGPD, o usuário pode exercer gratuitamente:</p>
+      <ul>
+        <li>Confirmação e acesso aos dados armazenados.</li>
+        <li>Correção de dados incompletos ou desatualizados.</li>
+        <li>Portabilidade para outra plataforma, mediante requisição formal.</li>
+        <li>Exclusão de dados coletados com base exclusivamente no consentimento.</li>
+        <li>Revogação do consentimento para marketing e cookies, a qualquer tempo.</li>
+        <li>Informação sobre compartilhamento com terceiros e finalidades.</li>
+      </ul>
+
+      <h2>6. Encarregado pelo Tratamento de Dados (DPO)</h2>
+      <div class="highlight-box">
+        <p style="margin:0;"><strong>Para exercer direitos, tirar dúvidas ou registrar reclamações:</strong></p>
+        <ul style="margin-top:10px; margin-bottom:0;">
+          <li><strong>E-mail:</strong> <a href="mailto:privacidade@quetalcongelados.com.br">privacidade@quetalcongelados.com.br</a></li>
+          <li><strong>Correspondência:</strong> R. Vila Romana, 53 — Itapuã, Salvador – BA, CEP 41.635-030</li>
+          <li><strong>Prazo de resposta:</strong> até 15 dias úteis (Art. 19 da LGPD).</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- Scripts (preservados) -->
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/popup-overlay-plugin/script.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
-  <script src="assets/popup-plugin/script.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+      <h2>7. Alterações a Esta Política</h2>
+      <p>Esta Política pode ser atualizada periodicamente. Alterações relevantes serão comunicadas por e-mail ou aviso na plataforma. A data de "Última atualização" indica a versão em vigor.</p>
+
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <p>Que Tal Alimentos LTDA<br/>CNPJ: 54.313.265/0001-79</p>
+    </div>
+    <div class="footer-col">
+      <h4>Endereço</h4>
+      <p>R. Vila Romana, 53 — Itapuã<br/>CEP 41.635-030 · Salvador / BA</p>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <p>(71) 99655-0630 (WhatsApp)<br/>contato@quetalcongelados.com.br<br/>Seg–Sex · 07h às 16h40</p>
+    </div>
+    <div class="footer-col">
+      <h4>Privacidade</h4>
+      <p>privacidade@quetalcongelados.com.br</p>
+    </div>
+  </div>
+</footer>
+
+<script defer src="assets/js/cookie-consent.js"></script>
 </body>
-
 </html>

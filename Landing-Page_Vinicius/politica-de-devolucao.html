@@ -1,329 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
-
-  <title>Política de Devolução e Troca — Que Tal Congelados</title>
-  <meta name="description" content="Conheça a política de devolução e troca do Que Tal Congelados. Informações sobre cancelamentos, trocas por defeito e como entrar em contato." />
-  <link rel="canonical" href="https://quetalcongelados.com.br/politica-de-devolucao" />
-  <meta name="robots" content="index, follow" />
-
-  <link rel="shortcut icon" href="assets/images/logo-icon-48x48.svg" type="image/x-icon">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Trocas, Devoluções e Cancelamento — Que Tal Congelados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* ── TOKENS ── */
-    :root{
-      --brand:       #E87D0D;
-      --brand-dark:  #C46A00;
-      --brand-light: #FFF3E0;
-      --ink:         #1C1410;
-      --ink-2:       #5C4A3A;
-      --surface:     #FFFFFF;
-      --surface-2:   #FFFBF6;
-      --border:      #EDE0D0;
-
-      --f-head: 'Lora', Georgia, serif;
-      --f-body: 'Inter', system-ui, sans-serif;
-
-      --r-sm:  8px;
-      --r-md:  16px;
-
-      --shadow-sm: 0 2px 8px rgba(0,0,0,.07);
-      --t: 220ms ease-out;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary:        #7A0F14;
+      --primary-dim:    #4A0B0E;
+      --primary-ctr:    #FAE6E8;
+      --secondary:      #DC8B1F;
+      --tertiary:       #B65225;
+      --surface:        #FAF6EE;
+      --surface-var:    #F1ECE4;
+      --on-surface:     #1B1814;
+      --on-surface-var: #544F49;
+      --outline-var:    #E3DED7;
+      --warning-bg:     #FFF8E1;
+      --warning-border: #C9A227;
     }
-
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:var(--f-body);
-      font-size:16px;line-height:1.65;
-      color:var(--ink);
-      background:var(--surface);
-      -webkit-font-smoothing:antialiased;
-    }
-    img{display:block;max-width:100%}
-    a{color:inherit;text-decoration:none}
-
-    .skip{position:absolute;top:-100%;left:1rem;background:var(--brand);color:#fff;padding:.5rem 1rem;border-radius:var(--r-sm);font-weight:600;z-index:9999;transition:top var(--t)}
-    .skip:focus{top:1rem}
-
-    /* ── TOPBAR ── */
-    .topbar{
-      background:var(--brand);
-      color:#fff;
-      font-size:.82rem;font-weight:600;
-      text-align:center;
-      padding:.55rem 1rem;
-      letter-spacing:.04em;
-    }
-
-    /* ── PAGE HEADER ── */
-    .page-header{
-      background:var(--surface-2);
-      border-bottom:1px solid var(--border);
-      padding:2rem 1.5rem 2.5rem;
-      text-align:center;
-    }
-    .page-header__logo{
-      width:160px;height:auto;
-      margin:0 auto 2rem;
-      object-fit:contain;
-    }
-    .page-header__title{
-      font-family:var(--f-head);
-      font-size:clamp(1.6rem,4vw,2.4rem);
-      font-weight:700;
-      color:var(--ink);
-      line-height:1.2;
-      letter-spacing:-.02em;
-      margin-bottom:.5rem;
-    }
-    .page-header__meta{
-      font-size:.82rem;
-      color:var(--ink-2);
-    }
-
-    /* ── DOCUMENT ── */
-    .doc{
-      max-width:720px;
-      margin:3rem auto 4rem;
-      padding:0 1.5rem;
-    }
-
-    .doc__section{
-      margin-bottom:2.5rem;
-    }
-    .doc__section + .doc__section{
-      border-top:1px solid var(--border);
-      padding-top:2.5rem;
-    }
-
-    .doc h2{
-      font-family:var(--f-head);
-      font-size:1.15rem;
-      font-weight:700;
-      color:var(--brand);
-      margin-bottom:.9rem;
-      display:flex;
-      align-items:center;
-      gap:.5rem;
-    }
-    .doc h2::before{
-      content:'';
-      display:inline-block;
-      width:3px;height:1.1em;
-      background:var(--brand);
-      border-radius:2px;
-      flex-shrink:0;
-    }
-
-    .doc p{
-      color:var(--ink-2);
-      margin-bottom:.75rem;
-      font-size:.97rem;
-    }
-    .doc p:last-child{margin-bottom:0}
-
-    .doc ul{
-      list-style:none;
-      margin:.5rem 0 .75rem 0;
-      padding:0;
-    }
-    .doc ul li{
-      color:var(--ink-2);
-      font-size:.97rem;
-      padding:.35rem 0 .35rem 1.3rem;
-      position:relative;
-      border-bottom:1px solid rgba(0,0,0,.04);
-    }
-    .doc ul li:last-child{border-bottom:none}
-    .doc ul li::before{
-      content:'→';
-      position:absolute;left:0;
-      color:var(--brand);
-      font-weight:700;
-    }
-
-    .doc strong{color:var(--ink);font-weight:600}
-
-    /* ── CONTACT CARD ── */
-    .contact-card{
-      background:var(--surface-2);
-      border:1px solid var(--border);
-      border-radius:var(--r-md);
-      padding:1.5rem;
-      margin-top:1rem;
-    }
-    .contact-card p{
-      margin-bottom:.5rem;
-      font-size:.95rem;
-    }
-    .contact-card a{
-      color:var(--brand);
-      font-weight:600;
-      text-decoration:underline;
-    }
-    .contact-card a:hover{color:var(--brand-dark)}
-
-    /* ── NOTE BOX ── */
-    .note{
-      background:var(--brand-light);
-      border-left:3px solid var(--brand);
-      border-radius:0 var(--r-sm) var(--r-sm) 0;
-      padding:.9rem 1.1rem;
-      font-size:.88rem;
-      color:var(--ink-2);
-      margin-top:.75rem;
-    }
-
-    /* ── FOOTER ── */
-    .footer{
-      background:var(--ink);
-      color:rgba(255,255,255,.6);
-      padding:2.5rem 1.5rem;
-      text-align:center;
-      font-size:.82rem;line-height:1.8;
-    }
-    .footer a{color:rgba(255,255,255,.75);text-decoration:underline}
-    .footer a:hover{color:var(--brand)}
-    .footer__brand{
-      font-family:var(--f-head);font-size:1rem;
-      color:var(--brand);display:block;margin-bottom:.75rem;font-weight:600;
-    }
-    .footer__divider{border-color:rgba(255,255,255,.1);margin:1.25rem 0}
-    .footer__legal{font-size:.72rem;color:rgba(255,255,255,.35)}
-    .footer__wrap{max-width:720px;margin:0 auto;padding:0 1.5rem}
-
-    @media(max-width:600px){
-      .doc{margin:2rem auto 3rem}
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--surface); color: var(--on-surface); line-height: 1.6; min-height: 100vh; }
+    .page-header { background: var(--primary); padding: 16px 40px; display:flex; align-items:center; }
+    .header-logo { height: 52px; width: auto; display: block; }
+    .wrapper { max-width: 860px; margin: 0 auto; padding: 32px 20px 56px; }
+    .card { background: #FFFBF3; border: 1px solid var(--outline-var); border-radius: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.04); overflow: hidden; }
+    .card-header { background: var(--primary-ctr); padding: 32px 40px 24px; border-bottom: 1px solid var(--outline-var); }
+    h1 { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--primary); line-height: 1.25; margin-bottom: 6px; }
+    .doc-meta { font-size: 12px; color: var(--on-surface-var); }
+    .card-body { padding: 32px 40px 40px; }
+    h2 { font-size: 13px; font-weight: 700; color: var(--tertiary); text-transform: uppercase; letter-spacing: 0.06em; margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--outline-var); }
+    h2:first-child { margin-top: 0; }
+    p  { font-size: 14px; line-height: 1.75; margin-bottom: 12px; }
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { font-size: 14px; line-height: 1.75; margin-bottom: 6px; }
+    li strong { color: var(--primary-dim); }
+    a  { color: var(--primary); }
+    a:hover { color: var(--secondary); }
+    .info-box { background: var(--surface-var); border-left: 4px solid var(--secondary); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; }
+    .info-box p { margin: 0; font-size: 14px; line-height: 1.7; }
+    .warning-box { background: var(--warning-bg); border-left: 4px solid var(--warning-border); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; }
+    .warning-box p { margin: 0; font-size: 14px; line-height: 1.7; }
+    .step-list { counter-reset: steps; padding-left: 0; list-style: none; }
+    .step-list li { counter-increment: steps; display: flex; gap: 14px; align-items: flex-start; margin-bottom: 12px; font-size: 14px; line-height: 1.75; }
+    .step-list li::before { content: counter(steps); min-width: 26px; height: 26px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 3px; }
+    .page-footer { background: var(--surface-var); border-top: 1px solid var(--outline-var); padding: 24px 40px; }
+    .footer-inner { max-width: 860px; margin: 0 auto; display: flex; gap: 40px; flex-wrap: wrap; }
+    .footer-col h4 { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; color: var(--on-surface); margin-bottom: 6px; }
+    .footer-col p { font-size: 12px; color: var(--on-surface-var); margin: 0; line-height: 1.6; }
+    @media (max-width: 600px) {
+      .page-header { padding: 14px 20px; }
+      .header-logo { height: 40px; }
+      .card-header, .card-body { padding: 24px 20px; }
+      .page-footer { padding: 20px; }
+      h1 { font-size: 22px; }
     }
   </style>
 </head>
 <body>
-  <a class="skip" href="#main">Ir para o conteúdo</a>
 
-  <!-- TOP BAR -->
-  <div class="topbar" aria-label="Informação de destaque">
-    Pedido mínimo R$&nbsp;129,50 &nbsp;·&nbsp; Entrega em até 48h úteis &nbsp;·&nbsp; Cardápio novo toda semana
+<header class="page-header">
+  <!-- Logo: logo-quetal.png (horizontal, fundo transparente) -->
+  <img src="assets/images/logos/logo-horizontal-color.png" alt="Que Tal Congelados" class="header-logo" />
+  <a href="index.html" style="margin-left:auto;font-size:13px;font-weight:600;color:rgba(255,255,255,.75);text-decoration:none;display:flex;align-items:center;gap:6px;">&#8592; Voltar ao site</a>
+</header>
+
+<div class="wrapper">
+  <div class="card">
+    <div class="card-header">
+      <h1>Política de Trocas, Devoluções e Cancelamento</h1>
+      <p class="doc-meta">Última atualização: 21 de maio de 2026 &nbsp;·&nbsp; Versão 1.0 &nbsp;·&nbsp; Que Tal Alimentos LTDA — CNPJ 54.313.265/0001-79</p>
+    </div>
+    <div class="card-body">
+
+      <h2>1. Arrependimento — Desistência da Compra (até 7 dias)</h2>
+      <p>Nos termos do Artigo 49 do Código de Defesa do Consumidor (CDC), o cliente pode desistir da compra no prazo de até <strong>7 (sete) dias corridos</strong> contados do recebimento do produto, desde que sejam atendidas as seguintes condições:</p>
+      <ul>
+        <li>O produto esteja <strong>ainda congelado</strong>, com embalagem original <strong>lacrada e intacta</strong>, sem sinais de abertura ou violação.</li>
+        <li>O pedido de desistência seja comunicado à Que Tal Congelados dentro do prazo legal, pelo WhatsApp <strong>(71) 99655-0630</strong> ou pelo e-mail <strong>contato@quetalcongelados.com.br</strong>.</li>
+      </ul>
+      <div class="warning-box">
+        <p>Produtos que tenham sido descongelados, abertos ou com embalagem violada <strong>não são elegíveis para desistência</strong>, pois não é possível verificar a integridade e segurança alimentar do item para fins de reaproveitamento.</p>
+      </div>
+      <p>Quando aplicável, o frete de retorno é custeado pela Que Tal Congelados, e o estorno cobre o valor integral do produto mais a taxa de entrega originalmente cobrada.</p>
+
+      <h2>2. Vício de Qualidade — Produto com Problema (até 30 dias)</h2>
+      <p>Se o cliente receber um produto com defeito de qualidade — como embalagem rasgada, produto entregue descongelado, item diferente do pedido ou fora do prazo de validade — poderá acionar a garantia legal prevista no Artigo 18 do CDC para bens não duráveis, com prazo de <strong>30 (trinta) dias</strong> a partir do recebimento.</p>
+
+      <p><strong>Para que a reclamação seja aceita, são exigidas:</strong></p>
+      <ul>
+        <li><strong>Registro de evidências:</strong> fotos e/ou vídeo do produto ainda em sua condição original de recebimento, mostrando claramente o problema.</li>
+        <li><strong>Comunicação dentro de 48 horas:</strong> a reclamação deve ser reportada nos canais oficiais (WhatsApp ou e-mail) em até <strong>48 horas após o recebimento</strong> do pedido.</li>
+      </ul>
+      <div class="warning-box">
+        <p>Reclamações realizadas após 48 horas do recebimento ou sem evidências visuais não serão aceitas. Presume-se que a deterioração ocorreu por falha de armazenamento ou manuseio inadequado pelo próprio consumidor após a entrega.</p>
+      </div>
+
+      <p>Quando a reclamação for válida, o cliente poderá optar por:</p>
+      <ol>
+        <li>Substituição do produto por outro equivalente;</li>
+        <li>Estorno integral do valor pago pelo produto.</li>
+      </ol>
+
+      <h2>3. Processo de Auditoria para Liberação do Reembolso</h2>
+      <p><strong>O estorno ou reembolso não é automático.</strong> Todo pedido de devolução passa por um processo de auditoria antes da liberação do valor:</p>
+      <ul>
+        <li>O reembolso só será processado <strong>após o retorno físico do produto à empresa</strong> e a conclusão da análise de qualidade pela nossa equipe técnica.</li>
+        <li>A análise verificará indícios físicos de degelo e recongelamento posterior, incluindo: alteração de textura, cristais de gelo excessivos na embalagem, deformação física do alimento ou perda do selamento original.</li>
+        <li>Caso sejam identificados indícios de <strong>armazenamento inadequado pelo cliente, quebra de cadeia fria após a entrega ou má-fé</strong>, a devolução será recusada, o produto descartado por razões sanitárias e o reembolso negado.</li>
+      </ul>
+      <div class="info-box">
+        <p>A análise técnica visa proteger tanto o consumidor quanto a integridade do processo alimentar. Produtos que apresentem sinais de manuseio pós-entrega não podem ser reaproveitados nem servem de base para estorno.</p>
+      </div>
+
+      <h2>4. Como Acionar Cancelamento, Troca ou Devolução</h2>
+      <ol class="step-list">
+        <li><span>Entre em contato pelo WhatsApp <strong>(71) 99655-0630</strong> ou pelo e-mail <strong>contato@quetalcongelados.com.br</strong>, informando número do pedido, nota fiscal e o motivo da solicitação.</span></li>
+        <li><span>Envie as fotos e/ou vídeo do produto nos mesmos canais (obrigatório para reclamações de vício de qualidade).</span></li>
+        <li><span>Nossa equipe confirmará o recebimento e orientará sobre os próximos passos, incluindo as instruções para devolução do produto quando aplicável.</span></li>
+        <li><span>Após o retorno e inspeção física do produto na empresa, o resultado da auditoria será comunicado e, se aprovado, o reembolso será processado.</span></li>
+      </ol>
+
+      <h2>5. Prazos e Formas de Restituição Financeira</h2>
+      <p>Aprovada a devolução após auditoria, o estorno é processado em até <strong>2 (dois) dias úteis</strong>:</p>
+      <ul>
+        <li><strong>Cartão de Crédito:</strong> O pedido de estorno é enviado à operadora. O crédito na fatura pode aparecer em 1 a 2 ciclos de fechamento, conforme a instituição emissora.</li>
+        <li><strong>Pix:</strong> O valor é devolvido diretamente na conta vinculada ao CPF ou CNPJ cadastrado no pedido.</li>
+      </ul>
+
+    </div>
   </div>
+</div>
 
-  <!-- PAGE HEADER -->
-  <header class="page-header" role="banner">
-    <a href="/" aria-label="Página inicial Que Tal Congelados">
-      <img
-        src="https://pd-clientes-all.s3.us-west-2.amazonaws.com/quetalcongelados/upload/que-tal-congelados_27102025034921.webp"
-        alt="Que Tal Congelados"
-        class="page-header__logo"
-        loading="eager"
-        decoding="async"
-        width="160"
-        height="64"
-        onerror="this.onerror=null;this.src='assets/images/logo4.png'"
-      >
-    </a>
-    <h1 class="page-header__title">Política de Devolução e Troca</h1>
-    <p class="page-header__meta">Última atualização: 18 de maio de 2026</p>
-  </header>
-
-  <!-- DOCUMENT -->
-  <main id="main">
-    <div class="doc">
-
-      <div class="doc__section">
-        <h2>Sobre nossa política</h2>
-        <p>
-          O Que Tal Congelados comercializa <strong>alimentos ultracongelados e perecíveis</strong>.
-          Por essa razão, e em conformidade com o Art. 18, §1º, inciso I do Código de Defesa do Consumidor
-          (CDC), <strong>não realizamos devoluções após a entrega</strong> do pedido, pois não é possível
-          garantir a integridade e a segurança alimentar do produto fora de nossa cadeia de frio.
-        </p>
-        <p>
-          Trabalhamos com ingredientes 100% naturais e controlamos rigorosamente a temperatura em todas
-          as etapas, desde o preparo até a entrega. Se você tiver qualquer dúvida sobre o produto antes
-          de pedir, entre em contato conosco pelo WhatsApp.
-        </p>
-      </div>
-
-      <div class="doc__section">
-        <h2>Quando realizamos troca ou reembolso</h2>
-        <p>Aceitamos troca ou reembolso total nos seguintes casos:</p>
-        <ul>
-          <li>Produto entregue <strong>avariado, violado ou com embalagem danificada</strong></li>
-          <li>Produto entregue <strong>fora da temperatura adequada</strong> (descongelado ou com sinais de descongelamento)</li>
-          <li>Produto <strong>diferente do que foi pedido</strong> (erro de separação)</li>
-          <li>Pedido com <strong>itens faltando</strong> em relação à nota de entrega</li>
-        </ul>
-        <div class="note">
-          <strong>Prazo:</strong> entre em contato em até <strong>24 horas</strong> após o recebimento,
-          enviando foto ou vídeo do produto pelo WhatsApp. Solicitações fora desse prazo não poderão ser analisadas.
-        </div>
-      </div>
-
-      <div class="doc__section">
-        <h2>Cancelamento de pedido</h2>
-        <p>
-          Você pode cancelar seu pedido <strong>antes do início do preparo</strong>, geralmente nas
-          primeiras 2 horas após a confirmação do pagamento.
-        </p>
-        <ul>
-          <li>Cancelamentos dentro do prazo: <strong>reembolso integral</strong></li>
-          <li>Reembolso processado em até <strong>7 dias úteis</strong> no mesmo método de pagamento utilizado</li>
-          <li>Após o início do preparo, o cancelamento não é mais possível</li>
-        </ul>
-        <p>
-          Para solicitar o cancelamento, entre em contato imediatamente pelo WhatsApp ou e-mail
-          informando o número do pedido.
-        </p>
-      </div>
-
-      <div class="doc__section">
-        <h2>Como entrar em contato</h2>
-        <p>
-          Para registrar uma solicitação de troca, reembolso ou cancelamento, utilize um dos
-          canais abaixo:
-        </p>
-        <div class="contact-card">
-          <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5571996550630" target="_blank" rel="noopener noreferrer">+55 71 99655-0630</a></p>
-          <p>✉️ <strong>E-mail:</strong> <a href="mailto:contato@quetalcongelados.com.br">contato@quetalcongelados.com.br</a></p>
-          <p>🕐 <strong>Atendimento:</strong> segunda a sexta, das 7h às 16h40</p>
-        </div>
-        <div class="note">
-          Ao entrar em contato, informe: <strong>nome completo, número do pedido e descrição do problema</strong>
-          (com foto ou vídeo, quando aplicável). Isso agiliza o atendimento.
-        </div>
-      </div>
-
+<footer class="page-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <p>Que Tal Alimentos LTDA<br/>CNPJ: 54.313.265/0001-79</p>
     </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__wrap">
-      <span class="footer__brand">Que Tal Congelados</span>
-      <p>
-        <a href="tel:+5571996550630">+55 71 99655-0630</a> &nbsp;·&nbsp;
-        <a href="https://instagram.com/quetalcongelados" target="_blank" rel="noopener noreferrer">@quetalcongelados</a>
-      </p>
-      <p>
-        <a href="/politica-de-privacidade">Política de Privacidade</a> &nbsp;·&nbsp;
-        <a href="/politica-de-devolucao">Política de Devolução</a> &nbsp;·&nbsp;
-        <a href="/sitemap.xml">Sitemap</a>
-      </p>
-      <hr class="footer__divider">
-      <p class="footer__legal">
-        Razão Social: Que Tal Alimentos LTDA &nbsp;·&nbsp; CNPJ: 54.313.265/0001-79<br>
-        Rua Vila Romana, nº 51, loja 001, Itapuã — Salvador/BA — CEP: 41.635-030<br>
-        © Que Tal Congelados 2026<br><br>
-        This site is not part of the Facebook website or Facebook Inc. FACEBOOK is a trademark of FACEBOOK, Inc.
-      </p>
+    <div class="footer-col">
+      <h4>Endereço</h4>
+      <p>R. Vila Romana, 53 — Itapuã<br/>CEP 41.635-030 · Salvador / BA</p>
     </div>
-  </footer>
+    <div class="footer-col">
+      <h4>SAC — Trocas e Devoluções</h4>
+      <p>(71) 99655-0630 (WhatsApp)<br/>contato@quetalcongelados.com.br<br/>Seg–Sex · 07h às 16h40</p>
+    </div>
+  </div>
+</footer>
 
+<script defer src="assets/js/cookie-consent.js"></script>
 </body>
 </html>

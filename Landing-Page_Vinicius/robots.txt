@@ -1,6 +1,8 @@
 User-agent: *
 Disallow:
 
+Sitemap: https://quetalcongelados.com.br/sitemap.xml
+
 # Bloquear bots de scraping / IA conhecidos
 User-agent: GPTBot
 User-agent: PerplexityBot
