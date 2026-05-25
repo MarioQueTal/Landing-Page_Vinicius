@@ -234,6 +234,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .ms--filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
 .ms--lg { font-size: 40px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 40; }
 .ms--sm { font-size: 20px; font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20; }
+.wpp-icon { display: inline-block; flex-shrink: 0; vertical-align: middle; }
 
 /* ── 6. COMPONENTES ───────────────────────────────────────── */
 
@@ -622,7 +623,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .fab-wpp:active { transform: scale(.95); }
 .fab-wpp:focus-visible { outline: 2px solid var(--secondary); outline-offset: 3px; }
 .fab-wpp.is-hidden { opacity: 0; pointer-events: none; transform: scale(.8); }
-.fab-wpp .ms { font-size: 28px; }
+.fab-wpp .wpp-icon { width: 28px; height: 28px; }
 
 /* — Footer block — */
 .footer { background: var(--primary); color: rgba(255,255,255,.85); }
